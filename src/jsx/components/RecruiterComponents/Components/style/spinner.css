@@ -1,0 +1,17 @@
+
+.custom-spinner {
+  width: 16px;
+  height: 16px;
+  border: 1px solid transparent;          /* Light purple background ring */
+  border-top: 1px solid #000000;       /* Purple spinning segment */
+  border-left: 1px solid #000000;       /* Purple spinning segment */
+  border-right: 1px solid #000000;       /* Purple spinning segment */
+  border-radius: 50%;
+  animation: spinerloader 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spinerloader {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

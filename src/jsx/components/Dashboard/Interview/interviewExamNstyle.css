@@ -1,0 +1,300 @@
+.interviewExamSection {
+    display: flex;
+    flex-direction:column;
+    .examTopSection {
+        display: flex;
+        margin-top: -30px;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        border-bottom: 0.5px solid #d8d8d8;
+        .questCount {
+            font-weight: 600;
+            font-size:16px;
+            color:#020817;
+        }
+        .rightSection {
+            display: flex;
+            flex-direction:column;
+            align-items: flex-end;
+            .endInterview {
+                background: #ef4444;
+                font-size: .875rem;
+                line-height: 1.25rem;
+                color:#fff;
+                padding: .5rem 1rem;
+                border:none;
+                border-radius:4px;
+                span {
+                    rotate: 45deg;
+                    display: inline-flex;
+                    font-size: 20px;
+                    transform: translateY(3px);
+                    line-height: 11px;
+                    margin-right: 6px;
+                }
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+    .QuestionBox {
+        display: flex;
+        flex-direction:column;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        border: 2px solid #e2e8f0;
+        background-color: #f0e9fb;
+        color:#020817;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        .question {
+            font-weight: 500;
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            margin-bottom: 0;
+        }
+    }
+    .answerBox {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        .answer {
+            width: 100%;
+            display: flex;
+            flex-direction:column;
+            .code-edit {
+                display: flex;
+                flex-direction:row;
+                .editorWindow {
+                    width: 50%;
+                    margin-right: 10px;
+                    display: flex;
+                    flex-direction:column;
+                    border: 1px solid #e2e8f0;
+                    border-radius:calc(0.5rem - 2px);
+                    .topHead {
+                        padding: 0.8rem 1rem;
+                        padding-bottom: 0.5rem;
+                        font-size: 1rem;
+                        line-height: 1.4rem;
+                        font-weight: 600;
+                        color:  #020817;
+                        svg {
+                            width: 16px;
+                            height: 16px;
+                            margin-right: 0.7rem;
+                        }
+                    }
+                    .react-monaco-editor-container {
+                            border: 1px solid #e2e8f0;
+                            margin: 0.5rem 1rem;
+                            border-radius:calc(0.5rem - 2px);
+                    }
+                    .output-inner-ios {
+                        width: calc(100% - 2rem);
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                        margin-bottom: 1rem;
+                        background: #000;
+                        height: calc(100% - 1.5rem);
+                        padding: 1rem;
+                        border-radius: 6px;
+                        pre {
+                            color: #00d900;
+                        }
+                    }
+                    .bottomSection {
+                        display: flex;
+                        flex-direction:row;
+                        justify-content: space-between;
+                        padding: 0.8rem 1rem;
+                        border-top:1px solid #e2e8f0;
+                        margin-top: 5px;
+                        .buttonRow {
+                            display: flex;
+                            flex-direction:row;
+                            gap:12px;
+                            .normalButton {
+                                border:1px solid #e2e8f0;
+                                background: #fff;
+                                font-size: .675rem;
+                                font-weight: 500;
+                                line-height: 1.05rem;
+                                padding-left: .75rem;
+                                padding-right: .75rem;
+                                color: rgb(40, 40, 40);
+                                border-radius: calc(0.5rem - 2px);
+                                height: 2.05rem;
+                            }
+                            .actionButton {
+                                border:1px solid #e2e8f0;
+                                background: #6024c2;
+                                font-size: .675rem;
+                                font-weight: 500;
+                                line-height: 1.05rem;
+                                padding-left: .75rem;
+                                padding-right: .75rem;
+                                color: rgb(255, 255, 255);
+                                border-radius: calc(0.5rem - 2px);
+                                height: 2.05rem;
+                                svg {
+                                    width: 14px;
+                                    height: 14px;
+                                    margin-right: 4px;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+                
+            }
+            .answer-input {
+                width: 100%;
+                border: 1px solid #e2e8f0;
+                background: #fff;
+                padding-left: .75rem;
+                padding-right: .75rem;
+                padding-top: .5rem;
+                padding-bottom: .5rem;
+                font-size: .775rem;
+                line-height: 1.25rem;
+                border-radius: calc(0.5rem - 2px);
+                min-height: 180px;
+            }
+        }
+    }
+    .speechRecogintionBox {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+        .topHead {
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            .sectionName {
+                font-size: .875rem;
+                line-height: 1.25rem;
+                font-weight: 500;
+                color: #020817;
+                margin-bottom: 0;
+            }
+            .micButton {
+                border:1px solid #e2e8f0;
+                font-size: .875rem;
+                background: #fff;
+                line-height: 1.25rem;
+                padding-left: .75rem;
+                padding-right: .75rem;
+                color: rgb(63, 25, 130);
+                border-radius: calc(0.5rem - 2px);
+                height: 2.25rem;
+                svg {
+                    width: 22px;
+                    height: 16px;
+                }
+                &:hover {
+                    background-color: rgb(243, 237, 252);
+                    color: rgb(63, 25, 130);
+                }
+            }
+        }
+        .recognitionSection {
+            width: 100%;
+            background: #f1f5f9;
+            padding: .75rem;
+            font-size: .875rem;
+            line-height: 1.25rem;
+            border-radius: calc(0.5rem - 2px);
+            min-height: 110px;
+        }
+    }
+    .triggerButtons {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        .buttonRow {
+            display: flex;
+            flex-direction:row;
+            gap: 0.7rem;
+            .navBtn {
+                background: #6024c2;
+                padding: .4rem 1rem;
+                color:#f8fafc;
+                font-weight: 500;
+                border-radius: calc(0.5rem - 2px);
+                border: none;
+                font-size: .855rem;
+                transition: all 0.3s;
+                line-height:1.25rem;
+                .RightIcon {
+                    width: 17px;
+                    height: 16px;
+                    margin-left: .4rem;
+                }
+                .LeftIcon {
+                    width: 17px;
+                    height: 16px;
+                    margin-right: .4rem;
+                }
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:350px) and (max-width:768px) {
+    .interviewExamSection {
+    & .triggerButtons {
+        & .buttonRow {
+            .navBtn {
+                font-size: 0.555rem;
+            }
+        }
+    }}
+    .interviewExamSection {
+    & .triggerButtons {
+        & .buttonRow {
+            & .navBtn {
+                .LeftIcon {
+                    width: 12px;
+                    height: 12px;
+                    margin-right: .2rem;
+                }
+                .RightIcon {
+                    width: 12px;
+                    height: 12px;
+                    margin-right: .2rem;
+                }
+            }
+        }
+    }}
+
+    .interviewExamSection {
+    & .QuestionBox {
+        .question {
+            font-weight: 500;
+            font-size: 0.825rem;
+            line-height: 1.45rem;
+        }}}
+    .interviewExamSection {
+    .QuestionBox {
+        padding: 1.1rem;
+    }}
+    .interviewExamSection {
+    & .answerBox {
+        & .answer {
+            & .code-edit {
+                flex-direction: column;
+                .editorWindow {
+                    width: 100%;
+                }}}}}
+
+}

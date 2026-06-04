@@ -1,0 +1,15 @@
+# User-Agent Directive
+# Applies to all crawlers, allowing unrestricted access to all resources.
+User-agent: *
+
+# Allow indexing of all pages and resources
+Allow: /
+
+# Sitemap Location
+# Specify the location of the XML sitemap to guide crawlers for better indexing.
+Sitemap: https://careersavvy.ai/sitemap.xml
+
+# Comments
+# - This robots.txt file ensures full access to all content for indexing by search engines.
+# - Ensure critical pages have proper meta tags for `index, follow` to guide crawlers.
+# - Regularly test and validate this file to ensure it's correctly implemented.

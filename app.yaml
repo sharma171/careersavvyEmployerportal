@@ -1,0 +1,46 @@
+runtime: nodejs20
+service: cs-employerportal
+
+env_variables:
+  NODE_ENV: production
+
+handlers:
+  - url: /favicon.ico  # Handler for the favicon
+    static_files: build/favicon.ico
+    upload: build/favicon.ico
+    secure: always  # Enforce HTTPS
+    http_headers:
+      Cache-Control: "public, max-age=86400"  # Cache favicon for 1 day
+
+  - url: /static  # Handler for static files
+    static_dir: build/static
+    secure: always  # Enforce HTTPS
+    http_headers:
+      Cache-Control: "public, max-age=86400"  # Cache static files for 1 day
+
+  - url: /sitemap.xml  # Serve sitemap.xml correctly
+    static_files: build/sitemap.xml
+    upload: build/sitemap.xml
+    secure: always
+    http_headers:
+      Cache-Control: "public, max-age=86400"  # Cache sitemap.xml for 1 day
+
+  - url: /robots.txt  # Serve robots.txt correctly
+    static_files: build/robots.txt
+    upload: build/robots.txt
+    secure: always
+    http_headers:
+      Cache-Control: "public, max-age=86400"  # Cache robots.txt for 1 day
+
+  - url: /.*  # Catch-all handler to serve index.html for all other routes
+    static_files: build/index.html
+    upload: build/index.html
+    secure: always  # Enforce HTTPS
+    http_headers:
+      Cache-Control: "no-cache, no-store, must-revalidate"  # No caching for index.html
+      Expires: "0"
+      Pragma: "no-cache"
+
+manual_scaling:
+  instances: 4
+instance_class: B4

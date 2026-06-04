@@ -1,0 +1,879 @@
+.hideHeader {
+    display: none;
+}
+.nav-header.hidden .nav-control {
+    opacity: 0;
+}
+.videoInterviewPage {
+        /* position: fixed; */
+    top: 0;
+    z-index: 9999 !important;
+    /* width: calc(100% - 5rem); */
+    background: linear-gradient(178deg, #673dbf, #202433);
+    padding: 0;
+    height: 100vh;
+    padding-top: 0px !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+.videoInterview {
+    .interviewTopSection {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        border-bottom: 1px solid #5d23c04d;
+        background: #5d23c080;
+        align-items: center;
+        margin-bottom: 1rem;
+        .buttonRow {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            .time {
+                background: #1e293b;
+                font-size: .875rem;
+                line-height: 1.25rem;
+                color:#fff;
+                padding: .5rem 1rem;
+                border:none;
+                border-radius:4px;
+                span {
+                    rotate: 45deg;
+                    display: inline-flex;
+                    font-size: 20px;
+                    transform: translateY(3px);
+                    line-height: 11px;
+                    margin-right: 6px;
+                }
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+            .questionCount {
+                font-weight: 500;
+                font-size: 15px;
+                color: #fff;
+                text-transform: capitalize;
+            }
+            .endInterview {
+                background: #ef4444;
+                font-size: .875rem;
+                line-height: 1.25rem;
+                color:#fff;
+                padding: .5rem 1rem;
+                border:none;
+                border-radius:4px;
+                span {
+                    rotate: 45deg;
+                    display: inline-flex;
+                    font-size: 20px;
+                    transform: translateY(3px);
+                    line-height: 11px;
+                    margin-right: 6px;
+                }
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+.videoInterview {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: -70px;
+}
+
+.videoInterview .innerTabs.started {
+    width: calc(100% - 2rem);
+    gap: 20px;
+    margin: 0 1rem;
+}
+
+.videoInterview .innerTabs .topInfo.row-flex .recordingIcon {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #db2424;
+    font-weight: 500;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity:0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.videoInterview .innerTabs .topInfo.row-flex .recordingDot {
+    width: 18px;
+    height: 18px;
+    background: red;
+    border-radius: 100px;
+    animation: 0.5s blink infinite;
+}
+
+.videoInterview .innerTabs .topInfo.row-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.videoInterview .innerTabs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    width: 95%;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+
+.videoInterview .innerTabs.started .lhs .webcam-feed {
+    max-height: calc(100vh - 17vh);
+    height: calc(100vh - 17vh);
+}
+.videoInterview .innerTabs.started .lhs {
+    width: calc(65% - 21.5px);
+}
+
+.videoInterview .innerTabs .lhs {
+    width: calc(65% - 21px);
+}
+
+.videoInterview .innerTabs.started .rhs {
+    height: calc(100vh - 17vh);
+    max-height: calc(100vh - 17vh);
+}
+
+.videoInterview .innerTabs .rhs .FeedbackShower .AiRotateIcon {
+    width: 100px;
+    height: 100px;
+    animation: AiRotate 2s linear infinite;
+    animation-play-state: running;
+    filter: brightness(12.5);
+}
+@keyframes AiRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.videoInterview .innerTabs .rhs .FeedbackShower .text1 {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    animation: hideafter1s 2s ease-in-out forwards;
+}
+.videoInterview .innerTabs .rhs .FeedbackShower .text2 {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    animation: showafter1s 2s ease-in-out forwards;
+}
+@keyframes hideafter1s {
+    0% {
+        opacity: 1;
+        display: unset;
+    }
+    80% {
+        opacity: 1;
+        display: unset;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+@keyframes showafter1s {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+    80% {
+        opacity: 0;
+        display: none;
+    }
+    100% {
+        opacity: 1;
+        display: unset;
+    }
+}
+.videoInterview .innerTabs .rhs .FeedbackShower {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #1d1d1d00;
+}
+.videoInterview .innerTabs .rhs {
+    width: calc(35% - 21px);
+    position: relative;
+    padding: 24px 31px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    background-color: #1e293b80;
+    border-radius: 30px;
+    overflow-y: auto;
+    height: calc(100vh - 20vh);
+}
+
+.videoInterview .innerTabs .rhs .mainHead {
+    font-size: 38px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #2600af;
+    line-height: 1.5em;
+    margin-bottom: 0;
+}
+
+.videoInterview .innerTabs .rhs .text {
+    font-size: 18px;
+    line-height: 1.6em;
+    color: #250789d9;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.videoInterview .innerTabs .rhs .instructionIcon {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    margin-top: 17px;
+    margin-bottom: 6px;
+    margin-left: -2px;
+}
+
+.videoInterview .innerTabs .rhs .instructionIcon .icon {
+    width: 28px;
+    height: 28px;
+}
+
+.videoInterview .innerTabs .rhs .instructionIcon .pointHead {
+    font-size: 22px;
+    color: #ec7a40;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.videoInterview .innerTabs .rhs ul.instructionList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 31px;
+}
+
+.videoInterview .innerTabs .rhs ul.instructionList .list {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    color: #f18c00;
+}
+
+.videoInterview .innerTabs .rhs ul.instructionList .list .number {
+    font-size: 15px;
+    color: #fff;
+    background: #ec7a40;
+    line-height: 0.8em;
+    width: 21.5px;
+    min-width: 21.5px;
+    height: 21.5px;
+    height: 21.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.videoInterview .innerTabs .rhs .top-tag {
+    padding: 10px 0px;
+    background: transparent;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.videoInterview .innerTabs .rhs .messages-box {
+    height: 100%;
+    max-height: calc(100vh - 66px);
+    display: flex;
+    gap: 18px;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: stretch;
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.videoInterview .innerTabs .rhs .messages-box .aimessage {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 13px;
+    width: 98%;
+    margin-right: auto;
+    font-weight: 600;
+    color:#fff;
+}
+
+.videoInterview .innerTabs .rhs .messages-box .aimessage span {
+    padding: 10px 15px;
+    border-radius: 14px;
+    background: #552de5;
+    font-weight: 400;
+    border-top-left-radius: 4px;
+}
+
+
+.videoInterview .innerTabs .rhs .messages-box .aiThinking .icon {
+    width: 25px;
+    height: 25px;
+    border:2px solid #6a3dff;
+    border-radius: 100px;
+}
+.videoInterview .innerTabs .rhs .messages-box .aiThinking {
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.videoInterview .innerTabs .rhs .messages-box .usermessage .topRow .dot {
+    width: 20px;
+    height: 20px;
+    background:#db2424;
+    border-radius: 100px;
+    animation: 0.5s blink infinite;
+}
+.videoInterview .innerTabs .rhs .messages-box .usermessage .topRow {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.videoInterview .innerTabs .rhs .messages-box .usermessage {
+    display: flex;
+    gap: 12px;
+    font-size: 15px;
+    width: 95%;
+    margin-left: auto;
+    color: #ffffff;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+    font-weight: 600;
+}
+
+.videoInterview .innerTabs .rhs .messages-box .usermessage span {
+    padding: 10px 15px;
+    border-radius: 14px;
+    background: #40189d;
+    font-weight: 400;
+    border-top-right-radius: 0px;
+}
+
+.webcam-feed {
+    width: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+    height: calc(100vh - 20vh);
+}
+
+.start-button {
+    padding: 15px 25px;
+    color: white;
+    background: linear-gradient(45deg, #6a3dff, #3403cb);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: auto;
+    width: 100%;
+}
+
+.start-button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1200px) {
+    .videoInterview .innerTabs {
+        width: 98%;
+    }
+    
+    .videoInterview .innerTabs .rhs .mainHead {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .videoInterview .innerTabs .rhs {
+        padding: 20px;
+    }
+    
+    .videoInterview .innerTabs .rhs .mainHead {
+        font-size: 28px;
+    }
+    
+    .videoInterview .innerTabs .rhs .text {
+        font-size: 16px;
+    }
+}
+
+
+.popup-overlay.instructionPopup .topHead .headlogo {
+    font-size: 1.15rem;
+    line-height: 1.65rem;
+    font-weight: 600;
+    color: #020817 !important;
+    svg {
+        width: 18px;
+        height: 18px;
+        margin: 6px;
+    }
+}
+.popup-overlay.instructionPopup .topHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.popup-overlay.instructionPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it appears on top of other elements */
+  }
+  
+  .popup-overlay.instructionPopup .testingInstruction {
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px 35px;
+    width: 80%;
+    max-width: 500px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .popup-overlay.instructionPopup .testingInstruction h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+.popup-overlay.instructionPopup .testingInstruction .instructionbox .iconbg .cameraGif {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
+.popup-overlay.instructionPopup .testingInstruction .instructionbox .iconbg {
+    background: #f4f1ff;
+    border-radius: 100px;
+    padding: 5px;
+}
+.popup-overlay.instructionPopup .testingInstruction .instructionbox .inst-text {
+    font-size: 15px;
+    color: #020817;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    margin-bottom: 0;
+}
+.popup-overlay.instructionPopup .testingInstruction .instructionbox .showFirst {
+    animation: hideafter1s 6s forwards;
+}
+.popup-overlay.instructionPopup .testingInstruction .instructionbox .showSecond {
+    opacity: 0;
+    animation: 6.4s showafter2s forwards;
+    color: #008d6a !important;
+}
+@keyframes showafter2s {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+    90% {
+        opacity: 0;
+        display: none;
+    }
+    100% {
+        opacity: 1;
+        display: unset;
+    }
+}
+.popup-overlay.instructionPopup .testingInstruction .instructionbox {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    margin: 16px 0;
+}
+.popup-overlay.instructionPopup .testingInstruction .instructionIcon .pointHead {
+    font-size: 22px;
+    color: #ec7a40;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.popup-overlay.instructionPopup .testingInstruction .instructionIcon {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.popup-overlay.instructionPopup .testingInstruction .instructionIcon .icon {
+    width: 28px;
+    height: 28px;
+}
+
+  
+  .popup-overlay.instructionPopup .testingInstruction p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .popup-overlay.instructionPopup .testingInstruction button {
+    background: linear-gradient(135deg, #6a3dff, #512da8);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+  
+  .popup-overlay.instructionPopup .testingInstruction button:hover {
+    background: linear-gradient(135deg, #512da8, #6a3dff);
+  }
+  
+
+  @media (max-width:1700px) {
+    .videoInterview .innerTabs .rhs .mainHead {
+        font-size: 28px;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+        color: #2600af;
+        line-height: 1.5em;
+        margin-bottom: 0;
+    }
+    .videoInterview .innerTabs .rhs {
+        width: calc(35% - 22px);
+        padding: 17px 27px;
+        gap: 8px;
+        height: calc(100vh - 21vh);
+    }
+    .videoInterview .innerTabs .rhs .text {
+        font-size: 15px;
+        line-height: 1.6em;
+        color: #250789d9;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+    .videoInterview .innerTabs .rhs .instructionIcon {
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+        align-items: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: -2px;
+    }
+    .videoInterview .innerTabs .rhs .instructionIcon .icon {
+        width: 22px;
+        height: 22px;
+    }
+    .videoInterview .innerTabs .rhs .instructionIcon .pointHead {
+        font-size: 19px;
+        color: #ec7a40;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .videoInterview .innerTabs .rhs ul.instructionList .list .number {
+        font-size: 10px;
+        color: #fff;
+        background: #ec7a40;
+        line-height: 0.8em;
+        width: 20.5px;
+        min-width: 20.5px;
+        height: 21.5px;
+        height: 21.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+    }
+    .videoInterview .innerTabs .rhs ul.instructionList .list {
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+        color: #f18c00;
+        font-size: 14px;
+    }
+    .videoInterview .innerTabs .rhs ul.instructionList {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 31px;
+    }
+    .start-button {
+        padding: 10px 20px;
+        color: white;
+        background: linear-gradient(45deg, #6a3dff, #3403cb);
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: 0.1px;
+        margin-top: auto;
+        width: 100%;
+    }
+    .videoInterview .innerTabs .rhs .messages-box {
+        height: 100%;
+        max-height: calc(100vh - 49vh);
+        gap: 18px;
+        margin-top: 10px;
+    }
+    .videoInterview .innerTabs .rhs .messages-box .aimessage {
+        gap: 8px;
+        font-size: 13px;
+        width: 98%;
+    }
+    .videoInterview .innerTabs .rhs .messages-box .usermessage {
+        gap: 10px;
+        font-size: 13px;
+        width: 95%;
+    }
+    .videoInterview .innerTabs .rhs .top-tag {
+        padding: 7px 0px;
+        font-size: 20px;
+    }
+    .videoInterview .innerTabs.started .lhs {
+        width: calc(65% - 22.5px);
+    }
+    
+  }
+  @media (min-width:769px) and (max-height:681px) {
+      .videoInterview .innerTabs.started .rhs {
+          width: calc(35% - 21px);
+          height: 100%;
+          height: calc(100vh - 33vh);
+        }
+        .videoInterview .innerTabs.started .lhs .webcam-feed {
+            max-height: calc(100vh - 33vh);
+            height: calc(100vh - 33vh);
+        }
+    }
+    @media (min-width:769px) and (max-width:1500px) and (max-height:558px) {
+        .videoInterview .innerTabs.started .rhs {
+            width: calc(35% - 21px);
+            height: 100%;
+            height: calc(100vh - 37vh);
+        }
+        .videoInterview .innerTabs.started .lhs .webcam-feed {
+            max-height: calc(100vh - 37vh);
+            height: calc(100vh - 37vh);
+        }
+    }
+
+    @media (max-width:1380px) {
+        .videoInterview .innerTabs .rhs .messages-box .aimessage {
+            gap: 8px;
+            font-size: 13px;
+            width: 98%;
+        }
+        .videoInterview .innerTabs .rhs .messages-box .usermessage {
+            gap: 10px;
+            font-size: 12px;
+            width: 95%;
+        }
+        .videoInterview .innerTabs.started .lhs {
+            width: calc(60% - 22.5px);
+        }
+        .videoInterview .innerTabs.started .rhs {
+            width: calc(40% - 14px);
+        }
+    }
+    
+
+    @media (max-width: 768px) {
+        .videoInterview .innerTabs.started .lhs {
+            width: 100%;
+        }
+        .webcam-feed {
+            height: 30vh;
+        }
+        .videoInterview .innerTabs.started .lhs .webcam-feed {
+            max-height: calc(30vh);
+            height: calc(30vh);
+        }
+        .videoInterview .innerTabs.started .rhs {
+            height: 50vh;
+            max-height: 50vh;
+        }
+        .videoInterview .innerTabs .rhs {
+            width: 100% !important;
+        }
+        .videoInterview .innerTabs .rhs .mainHead {
+            font-size: 26px;
+            font-weight: 600;
+            font-family: "Poppins", sans-serif;
+            color: #2600af;
+            line-height: 1.5em;
+            margin-bottom: 0;
+        }
+        .videoInterview .innerTabs .rhs .text {
+            font-size: 14px;
+            line-height: 1.6em;
+            margin-top: -4px;
+            color: #250789d9;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+        .videoInterview .innerTabs .rhs {
+            gap: 6px;
+        }
+        .start-button {
+            margin-bottom: 28px;
+        }
+        .start-button.end {
+            margin-bottom: 28px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .videoInterview .innerTabs {
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .videoInterview .innerTabs .lhs,
+        .videoInterview .innerTabs.started .lhs,
+        .videoInterview .innerTabs .rhs,
+        .videoInterview .innerTabs.started .rhs {
+            width: 100%;
+        }
+        
+        .videoInterview .innerTabs .rhs {
+            height: auto;
+            min-height: 50vh;
+            max-height: 54vh;
+        }
+        .videoInterview .innerTabs .rhs ul.instructionList {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .videoInterview .innerTabs .topInfo.row-flex {
+            padding: 8px 15px;
+        }
+    }
+    
+    @media screen and (max-width: 576px) {
+        .videoInterview .innerTabs {
+            width: 100%;
+            gap: 10px;
+        }
+        
+        .videoInterview .innerTabs .rhs {
+            padding: 15px;
+            border-radius: 20px;
+        }
+        
+        .videoInterview .innerTabs .rhs .mainHead {
+            font-size: 24px;
+        }
+        
+        .videoInterview .innerTabs .rhs .text {
+            font-size: 14px;
+        }
+        
+        .videoInterview .innerTabs .rhs .instructionIcon .pointHead {
+            font-size: 18px;
+        }
+        
+        .start-button {
+            padding: 12px 20px;
+            font-size: 16px;
+        }
+        
+        .webcam-feed {
+            border-radius: 20px;
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .videoInterview .innerTabs .rhs .mainHead {
+            font-size: 22px;
+        }
+        
+        .videoInterview .innerTabs .rhs ul.instructionList {
+            gap: 10px;
+        }
+        
+        .videoInterview .innerTabs .rhs ul.instructionList .list {
+            font-size: 14px;
+        }
+    }
+    
+    /* Fix for webcam in landscape orientation on mobile */
+    @media screen and (max-height: 500px) and (orientation: landscape) {
+        .videoInterview .innerTabs {
+            flex-direction: row;
+        }
+        
+       
+        
+    }
+    @media (max-width: 768px){
+        .videoInterview {
+    & .interviewTopSection {
+        & .buttonRow {
+            .questionCount.mob-w-ologin {
+                margin-left: 0;
+            }
+            .questionCount {
+                margin-left: 3.7rem;
+            }}}}
+    }

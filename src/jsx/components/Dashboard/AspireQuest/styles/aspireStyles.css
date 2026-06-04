@@ -1,0 +1,107 @@
+.aspireQuestPage {
+    background: #fff;
+    height: 100vh;
+    overflow: auto;
+}
+.header .header-content.whiteHeader {
+    background: #fff;
+}
+
+
+.resumeOuter .resumeTab.whiteResume .card .text.question .questionIcon svg {
+    color: rgb(37 99 235);
+    margin-right: 0;
+    width: 16px;
+    filter: unset;
+    height: 16px;
+}
+.resumeOuter .resumeTab.whiteResume .card  .text.answer .AnswerName svg {
+    color: rgb(75 85 99 );
+    margin-right: 0;
+    width: 16px;
+    filter: unset;
+    height: 16px;
+}
+.resumeOuter .resumeTab.whiteResume .card  .text.answer .AnswerName .answerIcon {
+    background-color: rgb(243 244 246);
+    padding: .4rem;
+    border-radius: 100px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.resumeOuter .resumeTab.whiteResume .card  .text.rating .ratingIcon svg {
+    color: rgb(75 85 99 );
+    margin-right: 0;
+    width: 16px;
+    filter: unset;
+    height: 16px;
+}
+.resumeOuter .resumeTab.whiteResume .card  .text.rating .ratingIcon {
+    background-color: rgb(243 244 246);
+    padding: .4rem;
+    border-radius: 100px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.resumeOuter .resumeTab.whiteResume .card  .text.feedback .feedbackIcon svg {
+    color: rgb(37 99 235);
+    margin-right: 0;
+    width: 16px;
+    filter: unset;
+    height: 16px;
+}
+.resumeOuter .resumeTab.whiteResume .card  .text.feedback .feedbackIcon {
+    background-color: rgb(243 244 246);
+    padding: .4rem;
+    border-radius: 100px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.resumeOuter .resumeTab.whiteResume .card  .text.answer span, .resumeOuter .resumeTab.whiteResume .card  .text.rating span, .resumeOuter .resumeTab.whiteResume .card  .text.feedback span {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.resumeOuter .resumeTab.whiteResume .card  .text.answer, .resumeOuter .resumeTab.whiteResume .card  .text.rating, .resumeOuter .resumeTab.whiteResume .card  .text.feedback {
+    margin-left: 2.0rem;
+}
+.resumeOuter .resumeTab.whiteResume .card .text.question .QuestionName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.resumeOuter .resumeTab.whiteResume .card .text.question .questionIcon {
+    background-color: rgb(219 234 254);
+    padding: 0.4rem;
+    border-radius: 100px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.resumeOuter .resumeTab.whiteResume .card {
+    background: #fff;
+    padding: 10px 0;
+    max-height: 65vh;
+}
+.resumeOuter .resumeTab.whiteResume {
+    background: #fff;
+    /* height: 90vh; */
+}
+
+
+
+@media (min-width: 768px) and (max-width:1280px) {
+    .interviewCard {
+        width: calc(50% - 0.7rem) !important;
+    }
+
+    
+}
+@media (min-width: 350px) and (max-width:768px) {
+    .interviewCard {
+        width: calc(100% - 0.7rem) !important;
+    }
+}

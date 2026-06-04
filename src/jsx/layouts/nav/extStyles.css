@@ -1,0 +1,45 @@
+.brand-logo {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+.brand-logo h3 {
+    font-style: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+    display: flex;
+    padding: 5px 14px;
+    /* background: #e0f7fd; */
+    color: #652f9d;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    flex-direction: row;
+    align-items: center;
+}
+.brand-logo .logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+.brand-logo h3 span {
+    color: #e0f9fd;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 8px;
+}
+@media (min-width:1300px) {
+    #main-wrapper.menu-toggle .nav-header .logo-title {
+        display: none;
+    }
+}
+@media (max-width:1023px) {
+    #main-wrapper.menu-toggle .nav-header .logo-title {
+        display: none;
+    }
+    #main-wrapper .nav-header .logo-title {
+        display: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    #main-wrapper .brand-logo {
+        margin-left: -24px;
+    }
+}

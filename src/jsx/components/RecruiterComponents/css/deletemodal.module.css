@@ -1,0 +1,106 @@
+.deletemodal__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.8);
+  animation: deletemodal__fadeIn 0.2s ease-in-out;
+}
+
+.deletemodal__dialog {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 9999;
+  width: 100%;
+  max-width: 32rem;
+  transform: translate(-50%, -50%);
+  display: grid;
+  gap: 1rem;
+  background: var(--bs-body-bg, #fff);
+  padding: 1.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  animation: deletemodal__zoomIn 0.2s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.deletemodal__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.deletemodal__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.deletemodal__description {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.deletemodal__footer {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.5rem;
+}
+
+@media (min-width: 576px) {
+  .deletemodal__footer {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.deletemodal__cancelBtn,
+.deletemodal__actionBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: background 0.2s ease;
+  border: unset;
+  cursor: pointer;
+}
+
+.deletemodal__cancelBtn {
+  background: var(--bs-body-bg, #fff);
+  border: 1px solid #dee2e6;
+  color: #212529;
+}
+
+.deletemodal__cancelBtn:hover {
+  background: #f8f9fa;
+}
+
+.deletemodal__actionBtn {
+  background: #dc3545;
+  color: white;
+}
+
+.deletemodal__actionBtn:hover {
+  background: #c82333;
+}
+
+@keyframes deletemodal__fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes deletemodal__zoomIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

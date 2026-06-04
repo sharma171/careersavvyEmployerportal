@@ -1,0 +1,424 @@
+.rateConfirmationProfile {
+  .TopHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #f9fafb;
+    padding: 16px 24px;
+    border-radius: 8px;
+
+    .rate-confirmation-text h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0;
+      color: #020817;
+    }
+
+    .rate-confirmation-text p {
+      font-size: 14px;
+      color: #64748b;
+      margin: 4px 0 0;
+    }
+
+    .rate-confirmation-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 8px 14px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #111827;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .rate-confirmation-btn:hover {
+      background: #024ec1;
+      color: #fff;
+    }
+
+    .btn-icon {
+      font-size: 14px;
+    }
+  }
+  .negotiation-container {
+    padding: 20px;
+    margin: -15px 0 0 0;
+
+    .badge.status.colorBlue {
+      background: green;
+      color: #fff;
+    }
+    .badge.status.colorOrange {
+      background: orange;
+      color: #fff;
+    }
+    .badge.status.colorRed {
+      background: red;
+      color: #fff;
+    }
+    .badge.status.darkBlack {
+      background: #5e5e5e;
+      color: #fff;
+    }
+    .badge.status:hover .PopupText {
+      position: absolute;
+      bottom: 30px;
+      background: #f5f5f5;
+      padding: 5px 8px;
+      border-radius: 14px;
+      color: #020817;
+      left: -50%;
+      display: unset;
+      opacity: 1;
+    }
+    .tableColumns {
+      display: flex;
+      flex-direction: column;
+      .mailText {
+        color: #020817;
+        font-weight: 500;
+      }
+      .dateTime {
+        font-weight: 400;
+        color: #4a5568;
+        font-size: 12px;
+      }
+    }
+    .counter:hover .PopupText {
+      position: absolute;
+      bottom: 30px;
+      background: #f5f5f5;
+      padding: 5px 8px;
+      border-radius: 14px;
+      left: -50%;
+      display: unset;
+      width: 170px;
+      opacity: 1;
+    }
+    .PopupText {
+      position: absolute;
+      bottom: 0px;
+      background: #f5f5f5;
+      opacity: 0;
+      border: 1px solid #ebebeb;
+      transition: all 0.3s;
+      padding: 5px 8px;
+      border-radius: 14px;
+      left: -50%;
+      display: none;
+    }
+
+    /* Summary Cards */
+    .summary-cards {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 0;
+    }
+
+    .card {
+      flex: 1;
+      background: #f9fafb;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+    }
+    .cardFlex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .lhs,
+      .rhs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #4a5568;
+      margin-bottom: 1px;
+    }
+
+    .card h4 {
+      font-size: 22px;
+      font-weight: 600;
+      color: #020817;
+      text-align: left;
+    }
+
+    .card .icon {
+      margin-left: 6px;
+      font-size: 16px;
+      color: #64748b;
+    }
+
+    .confirmed h4 {
+      color: #16a34a;
+    }
+
+    .negotiating h4 {
+      color: #ea580c;
+    }
+
+    .pending h4 {
+      color: #2563eb;
+    }
+
+    /* Negotiation Table */
+    .negotiation-table {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .negotiation-table h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #1a202c;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead th {
+      font-size: 14px;
+      font-weight: 500;
+      color: #4a5568;
+      text-align: left;
+      padding: 10px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    tbody td {
+      padding: 12px 10px;
+      font-size: 14px;
+      color: #1a202c;
+      border-bottom: 1px solid #f1f5f9;
+      vertical-align: middle;
+    }
+
+    .badge {
+      display: inline-block;
+      position: relative;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .employer {
+      background: #f3f4f6;
+      color: #111827;
+    }
+
+    .status {
+      background: #e5e7eb;
+      color: #111827;
+      margin-left: 6px;
+    }
+
+    .status-icon {
+      color: #ea580c;
+      font-size: 14px;
+      margin-right: 4px;
+    }
+
+    .rate {
+      font-weight: 600;
+    }
+
+    .counter {
+      color: #020817;
+      font-weight: 500;
+      position: relative;
+      .rateExpired {
+        padding: 3px 10px;
+        border: 1px solid #ea580c;
+        color: #ea580c;
+        border-radius: 100px;
+      }
+    }
+
+    .action-btn {
+      background: #f7fafc;
+      border: 1px solid #e1e3e785;
+      padding: 5px 12px;
+      border-radius: 5px;
+      font-weight: 600;
+      color: #020817;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .action-btn:hover {
+      background: #024ec1;
+      color: #fff;
+    }
+  }
+}
+.RatePopupWrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  .RatePopup {
+    background: #fff;
+    width: 580px;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+  }
+
+  .popup-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #111827;
+  }
+
+  .popup-desc {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 20px;
+  }
+
+  .input-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #374151;
+  }
+
+  .rate-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .rate-input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+  }
+
+  .checkbox-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 16px 0;
+    font-size: 14px;
+    color: #374151;
+  }
+
+  .checkbox-wrap input {
+    accent-color: #2563eb;
+  }
+
+  .popup-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+  }
+
+  .btn.cancel {
+    background: #f9fafb;
+    color: #374151;
+    border: 1px solid #d1d5db;
+  }
+
+  .btn.cancel:hover {
+    background: #f3f4f6;
+  }
+
+  .btn.submit {
+    background: #2563eb;
+    color: white;
+    font-weight: 500;
+  }
+
+  .btn.submit:hover {
+    background: #1e40af;
+  }
+}
+@media (max-width: 768px) {
+  .rateConfirmationProfile {
+    & .negotiation-container {
+      .summary-cards {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 0;
+        flex-wrap: wrap;
+      }
+      .card {
+        flex: 1 1;
+        background: #f9fafb;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 12px;
+        min-width: calc(50% - 18px);
+      }
+    }
+  }
+  .rateConfirmationProfile {
+    & .negotiation-container {
+      .negotiation-table .table-responsive {
+        overflow-x: auto;
+        overflow-y: hidden;
+        overscroll-behavior-x: contain; /* prevent page from scrolling when swiping the table */
+        -webkit-overflow-scrolling: touch; /* optional momentum on iOS */
+      }
+    }
+  }
+
+  .rateConfirmationProfile {
+    & .TopHead {
+      .rate-confirmation-text h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+        color: #020817;
+      }
+      .rate-confirmation-text p {
+        font-size: 12px;
+        line-height: 16px;
+        color: #64748b;
+        margin: 4px 0 0;
+      }
+      .rate-confirmation-btn {
+        padding: 4px 8px;
+        font-size: 12px;
+      }
+    }
+  }
+}

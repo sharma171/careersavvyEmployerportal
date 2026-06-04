@@ -1,0 +1,125 @@
+/* SystemCheckPopup.css */
+
+.system-check-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 9999;
+  padding-top: 20px;
+}
+
+.system-check-popup {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  padding: 30px;
+}
+
+.system-check-heading {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.system-check-text {
+  font-size: 14px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.system-check-progress-container {
+  height: 12px;
+  background: #eee;
+  border-radius: 8px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.system-check-progress-bar {
+  height: 100%;
+  background: #6024c2;
+  transition: width 0.3s;
+}
+
+.system-check-mic-container {
+  margin-top: 30px;
+}
+
+.system-check-mic-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.system-check-test-button {
+  background: #eae1fb;
+  color: #6024c2;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  &:hover {
+    background:#6024c2 ;
+    color: #eae1fb;
+  }
+}
+
+.system-check-stop-button {
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.system-check-audio-wrapper {
+  margin-top: 10px;
+}
+
+.system-check-audio-bar {
+  height: 10px;
+  background: #a78bfa;
+  transition: width 0.2s;
+  margin: 5px auto;
+}
+
+.system-check-audio-text {
+  font-size: 12px;
+  color: #555;
+}
+
+.system-check-continue-button {
+  margin-top: 30px;
+  background: #5b21b6;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.system-check-video-wrapper .Camera {
+    width: 100%;
+    height: 180px;
+    margin-top: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    background: #f3f3f3;
+}
+
+.system-check-row-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}

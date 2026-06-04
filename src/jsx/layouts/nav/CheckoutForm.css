@@ -1,0 +1,87 @@
+.checkout-form {
+    width: 100%;
+    max-width: 100%;
+    background-color: #ffffff00;
+  }
+  
+  .checkout-form h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #fbfbfb;
+  }
+  
+  .checkout-form input,
+  .checkout-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .card-element-wrapper {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .submit-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .checkout-form input::placeholder,
+  .checkout-form select {
+    color: #aab7c4;
+  }
+  
+  .checkout .absolutetext {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+  }
+  .checkout .absolute-green {
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+  }
+  .success-message-wrapper {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, #42cf5f, #43c302ed);
+    position: fixed;
+    top: 50%;
+    padding: 30px 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    align-items: center;
+    gap: 18px;
+}
+  
+  .tick-icon {
+    color: rgb(198, 225, 198);
+    width: 80px;
+    height: 80px;
+  }
+  

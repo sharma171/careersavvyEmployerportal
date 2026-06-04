@@ -1,0 +1,51 @@
+.validation-error::placeholder {
+  color: rgb(168, 60, 60) !important;
+  font-weight: 600;
+}
+.validation-error {
+  color: rgb(168, 60, 60) !important;
+  font-weight: 600;
+}
+.modal-dialog .datePickerjobpost .react-datepicker-wrapper .calenderIconRight,
+.datePickerjobpost .react-datepicker__calendar-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translate(-0, -42%);
+}
+.modal-dialog .datePickerjobpost .react-datepicker-wrapper {
+  width: 100%;
+}
+.modal-dialog .datePickerjobpost .react-datepicker-wrapper input {
+  width: 100%;
+}
+
+.quillEditor .ql-editor{
+      color: #020817 !important;
+    font-size: 15px;
+
+}
+.quillEditor .ql-editor.ql-blank {
+      color: #020817 !important;
+    font-size: 15px;
+
+}
+.quillEditor .ql-editor.ql-blank::before {
+  font-style: normal;
+  color: #6c757d;
+  font-size: 14px !important;
+  opacity: 1;
+  font-size: 0.95rem;
+}
+.quillEditor .ql-toolbar.ql-snow {
+  /* height: 8rem; */
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border: 1px solid #dfdfdf;
+}
+.quillEditor .ql-container.ql-snow {
+  height: 8rem;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border: 1px solid #dfdfdf;
+}

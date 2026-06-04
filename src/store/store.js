@@ -1,0 +1,25 @@
+import { applyMiddleware, combineReducers, compose,createStore,} from 'redux';
+import PostsReducer, {toggleMenu} from './reducers/PostsReducer';
+import thunk from 'redux-thunk';
+import { AuthReducer } from './reducers/AuthReducer';
+import profileReducer from '../store/reducers/profileReducer';
+import todoReducers from './reducers/Reducers';
+//import { reducer as reduxFormReducer } from 'redux-form';
+const middleware = applyMiddleware(thunk);
+
+const composeEnhancers =
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const reducers = combineReducers({
+    profile: profileReducer,
+    sideMenu: toggleMenu,
+    posts: PostsReducer,
+    auth: AuthReducer,
+		todoReducers,
+	//form: reduxFormReducer,	
+	
+});
+
+//const store = createStore(rootReducers);
+
+export const store = createStore(reducers,  composeEnhancers(middleware));

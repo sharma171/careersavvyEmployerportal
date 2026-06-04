@@ -1,0 +1,281 @@
+.extraQuestionDocsContainer {
+  background: #f7fafc;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+
+  .page-header {
+    text-align: left;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e2e8f0;
+    .headerRow {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-top: 2rem;
+      padding-bottom: 1.6rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .headCol {
+      display: flex;
+      flex-direction: column;
+
+      .priority {
+        padding-left: 0.625rem;
+        background-color: rgb(222, 133, 0);
+        padding-right: 0.625rem;
+        padding-top: 0.195rem;
+        padding-bottom: 0.195rem;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+        color: #fff;
+        border-radius: 100px;
+      }
+      .priority.red {
+        background-color: rgb(213, 39, 0);
+      }
+      .priority.orange {
+        background-color: rgb(222, 133, 0);
+      }
+      .priority.green {
+        background-color: rgb(0, 150, 0);
+      }
+    }
+  }
+
+  .page-header h2 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #020817;
+  }
+
+  .page-header p {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .extraQuestionCard {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+
+    /* Card */
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 0;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 0;
+      border-bottom: none;
+      padding: 1.5rem;
+      svg {
+        color: #020817;
+      }
+    }
+    .card-body {
+      padding: 1.5rem;
+      padding-top: 0;
+    }
+    .Info {
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: #020817;
+    }
+
+    .row-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .f-width {
+        width: 50%;
+      }
+    }
+    .labelHead {
+      color: #424242;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      font-weight: 600;
+    }
+    .instructions {
+      margin-top: 8px;
+      padding: 0.6rem 1rem;
+      background: #f1f5f9;
+      border-radius: 8px;
+      svg {
+        margin-right: 4px;
+        margin-top: -2px;
+      }
+      p {
+        font-size: 0.8rem;
+        color: #020817;
+        font-weight: 400;
+        margin-bottom: 0;
+        text-transform: capitalize;
+      }
+    }
+    .card-header h3 {
+      flex: 1;
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+      margin-bottom: 0;
+      color: #020817;
+    }
+
+    .card-header .count {
+      font-size: 0.75rem;
+      color: #020817;
+      background: #f1f5f9;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
+      padding-top: 0.125rem;
+      padding-bottom: 0.125rem;
+      font-weight: 500;
+      border-radius: 20px;
+    }
+    .form-label {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      font-weight: 500;
+      color: #020817;
+    }
+    .asterisk {
+      color: red;
+    }
+    .radio-group {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      .radio-inline {
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        input {
+          margin-right: 10px;
+        }
+      }
+    }
+    .question textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      outline: none;
+      font-size: 13px;
+      background: #f7fafc;
+    }
+
+    /* Upload box */
+    .upload-box {
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .upload-area {
+      border: 2px dashed #cbd5e0;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      background: transparent;
+      margin-top: 5px;
+      cursor: pointer;
+      color: #020817;
+    }
+
+    .upload-area p {
+      margin: 0;
+      font-weight: 500;
+      font-size: 14px;
+      margin-top: 10px;
+      margin-bottom: -5px;
+    }
+
+    .upload-area span {
+      font-size: 12px;
+      color: #6b7280;
+    }
+
+    /* Questions */
+    .question {
+      margin-bottom: 25px;
+      .react-datepicker-wrapper {
+        width: 100%;
+      }
+      .react-datepicker__calendar-icon {
+        top: 50%;
+        right: 10px;
+        transform: translate(0, -50%);
+      }
+      .date-picker-input {
+        width: 100%;
+      }
+    }
+
+    .question label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 12px;
+      font-weight: 500;
+      color: #020817;
+    }
+
+    .question input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      outline: none;
+      font-size: 13px;
+      background: #f7fafc;
+    }
+
+    .question input:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 2px #bfdbfe;
+    }
+
+    /* Submit */
+    .submit-section {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .submit-section p {
+      font-size: 13px;
+      color: #020817;
+      margin-bottom: 10px;
+    }
+
+    .submit-btn {
+      background: #2563eb;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 0 auto;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .submit-btn:hover {
+      background: #1d4ed8;
+    }
+  }
+}

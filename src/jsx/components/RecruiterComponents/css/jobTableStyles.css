@@ -1,0 +1,231 @@
+.JobCardActive.card {
+border-left: 4px solid rgb(34 197 94) !important;
+}
+.JobCardReview.card {
+  border-left: 4px solid rgb(23, 77, 184) !important;
+}
+.JobCardDraft.card {
+  border-left: 4px solid rgb(138, 138, 138) !important;
+}
+.JobCardClosed.card {
+  border-left: 4px solid rgb(246 131 131) !important;
+}
+.JobListingBoard.job-table-container {
+  border-radius: 0;
+  padding: 0;
+.job-table {
+    width: 100%;
+    background: #fff;
+    border-collapse: separate;
+    border-spacing: 0 0px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0 !important;
+}
+
+.job-table thead {
+  color: #64748b;
+  font-weight: 600;
+  text-align: left;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.job-table th:last-child {
+    border-top-right-radius: 10px;
+}
+.job-table th:first-child {
+    border-top-left-radius: 10px;
+}
+.job-table th {
+  background: #f8fafc;
+  padding: 12px 1rem;
+  font-size: 14px;
+}
+
+.job-table td svg {
+    width: 16px;
+    height: 16px;
+}
+.job-table td {
+  /* background: #ffffff; */
+  padding: 16px 1rem;
+  vertical-align: middle;
+  border-top: 1px solid #f1f5f9;
+  font-size: 14px;
+}
+
+.job-title {
+  font-weight: 600;
+  font-size: 15px;
+  color: #020817;
+}
+
+.job-subtitle {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.job-tags {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.job-skill-tag {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 600px;
+    color: #020817;
+    font-weight: 600;
+}
+
+.company-logo {
+  background: #ede9fe;
+  color: #7c3aed;
+  border-radius: 50%;
+  font-weight: bold;
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.company-name {
+  font-weight: 500;
+  color: #020817;
+}
+.ListOverFlow {
+   overflow: auto;
+    max-height: 319px;
+}
+
+.company-label {
+  font-size: 12px;
+  color: #64748b;
+  svg {
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+  }
+}
+
+.job-location {
+  color: #020817;
+  font-weight: 400;
+  svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.job-type {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.salary-text {
+  color: #020817;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.status-tag {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-tag.review {
+  background-color: #2e26a6;
+  color: #ffffff;
+}
+.status-tag.draft {
+  background-color: #e2e3e5;
+  color: #6c757d;
+}
+.status-tag.closed {
+  background-color: #bd3a3a;
+  color: #ffffff;
+}
+
+.status-tag.active {
+  background-color: rgb(34 197 94);
+  color: #ffffff;
+}
+
+.action-icon {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #475569;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+
+.action-icon.smallButtons {
+  background: transparent;
+  align-items: center;
+  justify-content: start;
+  border-radius: 30px;
+  transition: all 0.3s;
+  .textView {
+    font-size: 12px;
+    transition: all 0.3s;
+    font-style: normal;
+    line-height: 15px;
+    text-wrap: nowrap;
+    /* display: none; */
+  }
+}
+
+.action-icon.smallButtons:hover {
+  /* margin-left: -10px;
+  margin-right: -10px; */
+}
+.action-icon.smallButtons:hover .textView{
+          display: unset;
+        font-style: normal;
+        color: #020817;
+        font-weight: 400;
+
+}
+}
+@media (max-width: 768px) {
+  .JobListingBoard.job-table-container {
+    max-width: 100%;
+    overflow: auto;
+      .job-table th {
+        padding: 6px 0.5rem;
+        font-size: 12px;
+        font-weight: 500;
+      }
+      .company-logo {
+        display: none;
+      }
+      .job-location svg {
+        display: none;
+      }
+  }
+  .JobListingBoard.job-table-container {
+      .job-table td {
+          /* background: #ffffff; */
+          padding: 6px 0.5rem;
+          border-top: 1px solid #f1f5f9;
+          font-size: 12px;
+      }
+  }
+}

@@ -1,0 +1,993 @@
+.interview-prep .row-flex, .exam-page .row-flex {
+  display: flex;
+  flex-direction: row;
+}
+.interview-prep .wrap, .exam-page .wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.interview-prep {
+  gap: 24px;
+  padding-bottom: 80px;
+}
+.interview-prep .col-flex, .exam-page .col-flex {
+  display: flex;
+  flex-direction: column;
+}
+.interview-prep .col-flex.results-summary.card .col-flex {
+  gap: 18px;
+}
+.interview-prep .dash-info {
+  gap: 30px;
+  justify-content: space-between;
+}
+.interview-prep.Light .dash-info .dash-card:nth-child(1) {
+  background: #E5E2FF;
+  box-shadow: 0px 0px 13px -2px rgba(77, 66, 171, 0.45)
+}
+.interview-prep.Light .dash-info .dash-card:nth-child(2) {
+  background: #E2EFFF;
+  box-shadow: 0px 0px 13px -2px rgba(63, 184, 164, 0.45);
+}
+.interview-prep.Light .dash-info .dash-card:nth-child(3) {
+  background: #E2FFF2;
+  box-shadow: 0px 0px 13px -2px #2e976859;
+}
+.interview-prep.Light .dash-info .dash-card:nth-child(4) {
+  background: #F5FFE2;
+  box-shadow: 0px 0px 13px -2px rgba(143, 187, 109, 0.45);
+}
+.interview-prep.Dark .dash-info .dash-card:nth-child(1) {
+  background: #45249A;
+  box-shadow: 0px 0px 13px -2px rgba(77, 66, 171, 0.45)
+}
+.interview-prep.Dark .dash-info .dash-card:nth-child(2) {
+  background: #4DA5EB;
+  box-shadow: 0px 0px 13px -2px rgba(63, 184, 164, 0.45);
+}
+.interview-prep.Dark .dash-info .dash-card:nth-child(3) {
+  background: #24C983;
+  box-shadow: 0px 0px 13px -2px #2e976859;
+}
+.interview-prep.Dark .dash-info .dash-card:nth-child(4) {
+  background: #89C344;
+  box-shadow: 0px 0px 13px -2px rgba(143, 187, 109, 0.45);
+}
+.interview-prep .dash-info .dash-card {
+  padding: 22px;
+  gap: 20px;
+  justify-content: space-between;
+  width: calc(25% - 24px);
+  border-radius: 16px;
+}
+.interview-prep .dash-info .dash-icon {
+  justify-content: center;
+  align-items: center;
+}
+.interview-prep .dash-info .dash-icon .dash-img {
+  width: 40px;
+  height: 40px;
+}
+.interview-prep .dash-info .dash-score {
+  align-items: flex-end;
+  gap: 4px;
+}
+.interview-prep.Light .dash-info .dash-score .t-head {
+  color: #425166;
+}
+.interview-prep.Dark .dash-info .dash-card:nth-child(1) .dash-score .t-head {
+  color: #C5D3E7;
+}
+.interview-prep.Dark .dash-info .dash-card:nth-child(2) .dash-score .t-head {
+  color: #D3E9FA;
+}
+.interview-prep.Dark .dash-info .dash-card:nth-child(3) .dash-score .t-head {
+  color: #E2FFF3;
+}
+.interview-prep.Dark .dash-info .dash-card:nth-child(4) .dash-score .t-head {
+  color: #ECFDD8;
+}
+.interview-prep .dash-info .dash-score .t-head {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+}
+.interview-prep.Light .dash-info .dash-score .percent-score {
+  color: #151D48;
+}
+.interview-prep.Dark .dash-info .dash-score .percent-score {
+  color: #ffffff;
+}
+.interview-prep .dash-info .dash-score .percent-score {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.interview-prep .dash-info .dash-score .suggestions {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.interview-prep.Light .dash-info .dash-score .suggestions {
+color: #4079ED;
+}
+.interview-prep.Dark .dash-info .dash-card:nth-child(1) .dash-score .suggestions {
+color: #A2BDF4;
+}
+.interview-prep.Dark .dash-info .dash-card:nth-child(2) .dash-score .suggestions {
+color: #D4E1FB;
+}
+.interview-prep.Dark .dash-info .dash-card:nth-child(3) .dash-score .suggestions {
+color: #DDFAED;
+}
+.interview-prep.Dark .dash-info .dash-card:nth-child(4) .dash-score .suggestions {
+color: #E7FECB;
+}
+
+.interview-prep .interview-table {
+  gap: 24px;
+}
+.interview-prep .interview-table .create-btn {
+  padding: 12px 25px;
+  background: #48a9f8;
+  color: #f1f1f1;
+  margin: 0 auto;
+  border-radius: 14px;
+  gap: 16px;
+  border: none;
+}
+
+.interview-prep.Light .interview-table .table-heading, .interview-prep.Light .interview-table .table-content {
+background: #FFFFFF;
+}
+.interview-prep.Dark .interview-table .table-heading, .interview-prep.Dark .interview-table .table-content {
+background: #28253b;
+}
+.interview-prep .interview-table .table-heading, .interview-prep .interview-table .table-content {
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  padding: 12px 10px;
+  box-sizing: border-box;
+}
+.interview-prep .interview-table .table-heading .head-row .icon {
+  width: 35px;
+  height: 35px;
+  filter: saturate(3) contrast(0.85) drop-shadow(0px 0px 5px #ccc);
+}
+.interview-prep.Light .interview-table .table-heading .head-row:nth-child(1) .head-text, .interview-prep .interview-table .table-content .content-row:nth-child(1) .Content-text  {
+  color: #53922F;
+}
+.interview-prep.Light .interview-table .table-heading .head-row:nth-child(3) .head-text, .interview-prep .interview-table .table-content .content-row:nth-child(3) .Content-text  {
+  color: #00b5c2;
+}
+.interview-prep.Light .interview-table .table-heading .head-row:nth-child(5) .head-text, .interview-prep .interview-table .table-content .content-row:nth-child(5) .Content-text  {
+  color: #00bb3a;
+}
+.interview-prep.Light .interview-table .table-heading .head-row:nth-child(7) .head-text, .interview-prep .interview-table .table-content .content-row:nth-child(7) .Content-text  {
+  color: #7200ea;
+}
+.interview-prep.Light .interview-table .table-heading .head-row:nth-child(9) .head-text{
+  color: #7200ea;
+}
+.interview-prep.Dark .interview-table .table-heading .head-row:nth-child(1) .head-text{
+  color: #91BE78;
+}
+.interview-prep.Dark .interview-table .table-heading .head-row:nth-child(3) .head-text {
+  color: #7BB3B9;
+}
+.interview-prep.Dark .interview-table .table-heading .head-row:nth-child(5) .head-text {
+  color: #4AC26E;
+}
+.interview-prep.Dark .interview-table .table-heading .head-row:nth-child(7) .head-text {
+  color: #A087D1;
+}
+.interview-prep.Dark .interview-table .table-heading .head-row:nth-child(9) .head-text{
+  color: #D77C7E;
+}
+ .interview-prep.Dark .interview-table .table-content .content-row:nth-child(1) .Content-text  {
+  color: #69BA3B;
+}
+ .interview-prep.Dark .interview-table .table-content .content-row:nth-child(3) .Content-text  {
+  color: #42BAC6;
+}
+.interview-prep.Dark .interview-table .table-content .content-row:nth-child(5) .Content-text  {
+  color: #44BA68;
+}
+.interview-prep.Dark .interview-table .table-content .content-row:nth-child(7) .Content-text  {
+  color: #865FD1;
+}
+.interview-prep.Light .interview-table .table-content .content-row button.completed  {
+  color: #07CB79;
+  border: 1px solid #07CB79;
+  border-radius: 15px;
+  padding: 4px 7px;
+  gap:6px;
+}
+.interview-prep.Light .interview-table .table-content .content-row button.incompleted  {
+  color: #942225;
+  border: 1px solid #942225;
+  border-radius: 15px;
+  background: transparent;
+  padding: 4px 7px;
+  gap:6px;
+}
+.interview-prep.Dark .interview-table .table-content .content-row button.incompleted .incomplete {
+  filter: brightness(1.5);
+}
+.interview-prep.Dark .interview-table .table-content .content-row button.incompleted  {
+  color: #e94147;
+  border: 1px solid #e94147;
+  border-radius: 15px;
+  background: transparent;
+  padding: 4px 7px;
+  gap:6px;
+}
+.interview-prep.Dark .interview-table .table-content .content-row button.completed  {
+  color: #07CB79;
+  border: 1px solid #07CB79;
+  border-radius: 15px;
+  background: transparent;
+  padding: 4px 7px;
+  gap:6px;
+}
+.interview-prep .interview-table .table-heading .head-row .head-text, .interview-prep .interview-table .table-content .content-row .Content-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.interview-prep .interview-table .table-heading .head-row, .interview-prep .interview-table .table-content .content-row  {
+  width: 20%;
+  gap: 16px;
+  align-items: center;
+  height: 35px;
+  justify-content: center;
+}
+.interview-prep.Dark .interview-table .table-heading .divider, .interview-prep.Dark .interview-table .table-content .divider {
+width: 6.92px;
+height: 18.49px;
+background: rgba(242, 242, 242, 0.19);
+border: 1px solid rgba(0, 0, 0, 0.08);
+border-radius: 10px;
+}
+.interview-prep.Light .interview-table .table-heading .divider, .interview-prep.Light .interview-table .table-content .divider {
+box-sizing: border-box;
+width: 6.92px;
+height: 18.49px;
+background: #F2F2F2;
+border: 1px solid rgba(0, 0, 0, 0.08);
+border-radius: 10px;
+}
+.interview-prep .StartNewInterviewCard {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 230px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+}
+.interview-prep.Light .StartNewInterviewCard {
+background: #E2EFFF;}
+.interview-prep.Dark .StartNewInterviewCard {
+  background: #4DA5EB;}
+  .interview-prep.Dark .StartNewInterviewCard .start-text {
+    color: #425166;
+  }
+  .interview-prep.Dark .StartNewInterviewCard .start-text {
+    color: #fff;
+  }
+.interview-prep .StartNewInterviewCard img {
+  width: 60px;
+  height: 60px;
+}
+.interview-prep .StartNewInterviewCard .start-text {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 28px;
+}
+.modal.Dark .btn-close {
+  filter: invert(1);
+}
+
+
+/**************   Exam page  ******************/
+
+.exam-page.Light {
+  background: #fff;
+  border-radius: 21px;
+  padding: 16px 16px;
+  /* box-shadow: 0px 0 14px #9292926e, inset 0px 0px 14px #00000029; */
+  margin-bottom: 40px;
+}
+.exam-page.Dark {
+  background: #87838317;
+  border-radius: 21px;
+  padding: 16px 16px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2), 0 2px 6px rgb(255 255 255 / 11%);
+}
+.exam-page .question-nav {
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.exam-page .question-nav .prev.btn img {
+  background: #fff;
+  border-radius: 100px;
+}
+.exam-page .question-nav .prev.btn {
+  background: #5549c7;
+  margin-left: auto;
+  margin-right: 16px;
+}
+.exam-page .question-nav .next.btn, .exam-page .question-nav .prev.btn {
+  color: #fff;
+}  
+.exam-page.Dark .question-nav .next.btn, .exam-page.Dark .question-nav .prev.btn {
+  background: #e5e2ff4d;
+  color: #0b82e3;
+}
+.exam-page .question-nav .next.btn img {
+  background: #fff;
+  border-radius: 100px;
+}
+.exam-page .question-nav .next.btn {
+  background: #5549c7;
+  padding-left: 11px;
+}
+.exam-page .question-nav .next.btn span, .exam-page .question-nav .prev.btn span {
+  font-weight: 400;
+}
+.exam-page .question-nav .btn {
+  padding: 7px 9px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  box-shadow: 0px 0px 13px -2px rgba(116, 136, 127, 0.45);
+  border-radius: 16px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+}
+.exam-page .question-nav .btn .icon {
+  width: 20px;
+}
+.exam-page .e-tag {
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  border-radius: 16px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+.exam-page .question-tag img {
+  background: #fff;
+  border-radius: 100px;
+}
+.exam-page .question-tag {
+  color: #ffffff;
+  background: #48a9f8;
+  box-shadow: 0px 0px 13px -2px rgba(116, 136, 127, 0.45);
+}
+.exam-page.Dark .question-tag {
+  color: #0084f0;
+  background: #cddeee3f;
+  box-shadow: 0px 0px 13px -2px rgba(116, 136, 127, 0.45);
+}
+.exam-page.Dark .answer-tag {
+  background: #ffedd338;
+  box-shadow: 0px 0px 13px -2px rgba(185, 188, 135, 0.45);
+  border-radius: 16px;
+  margin-top: 16px;
+  color: #dea719;
+}
+.exam-page .voiceAsist .row-flex {
+  gap: 3px;
+  align-items: center;
+  height: 32px;
+}
+.exam-page .voiceAsist .speechOne {
+  background: linear-gradient(180deg, #0092e7 0%, #003cac 100%);
+  border-radius: 10px;
+  width: 4px !important;
+  max-height: 28px;
+}
+.exam-page .voiceAsist {
+  padding: 8px 16px;
+  display: flex;
+  margin-top: 16px;
+  margin-left: 16px;
+  color: #639ede;
+  background: #ebebeb;
+  align-items: center;
+  border-radius: 16px;
+  flex-direction: row;
+  gap: 8px;
+  box-shadow: inset 0px 0px 22px #cddde6;
+}
+.exam-page .answer-tag img {
+  background: #fff;
+  border-radius: 100px;
+}
+.exam-page .answer-tag {
+  background: #e0ba57;
+  box-shadow: 0px 0px 13px -2px rgba(185, 188, 135, 0.45);
+  border-radius: 16px;
+  margin-top: 16px;
+  color: #ffffff;
+}
+.question-title {
+  margin-top: 14px;
+  margin-left: 5px;
+  font-size: 18px;
+  color: #1d74bb;
+  font-weight: 600;
+}
+.exam-page .code-output-ios {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 16px; /* Rounded corners for iOS look */
+  background: linear-gradient(145deg, #e0eafc, #cfdef3); /* Soft gradient background */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft, subtle shadow */
+  width: 50%;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.exam-page .output-title-ios {
+  font-size: 20px;
+  font-weight: 600; /* Slightly bolder for title */
+  color: #333;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.exam-page .output-inner-ios {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent inner background */
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 15px;
+  border-radius: 12px; /* Smooth edges for iOS-like feel */
+  font-size: 16px;
+  color: #444;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.05); /* Subtle inset shadow */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.exam-page pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Dark Mode Styles */
+.exam-page.Dark .code-output-ios {
+  background: linear-gradient(145deg, #2a2a72, #009ffd); /* Darker gradient for dark mode */
+}
+
+.exam-page.Dark .code-output-ios .output-inner-ios {
+  background: rgba(0, 0, 0, 0.6); /* Darker semi-transparent inner background */
+  color: #ddd; /* Light text color */
+}
+
+.col-flex.answer .code-edit {
+  gap: 16px;
+}
+.col-flex.answer {
+  position: relative;
+}
+.col-flex.answer .validate-button {
+  background: rgb(160, 112, 15);
+  color: #fff;
+  margin-top: 16px;
+  border-radius: 12px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-right:auto;
+  /* background: #0b82e3; */
+  color: #fff;
+}
+.exam-page .react-monaco-editor-container {
+  margin-top: 18px;
+  box-shadow: 0 0 15px #ccc;
+  border-radius: 5px;
+}
+.exam-page .answer-input {
+  background: #eeeae2;
+  box-shadow: 0px 0px 23px -2px rgb(238 234 226);
+  border-radius: 10px;
+  color: #bd8900;
+  border: 1px solid #e1d7c5;
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 16px;
+  min-height: 165px;
+  padding: 14px;
+}
+.exam-page.Dark .answer-input {
+  background: #2d2d2d59;
+  box-shadow: 0px 0px 13px -2px rgba(116, 136, 127, 0.45);
+  border-radius: 10px;
+  color: #d2cfcf;
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 16px;
+  min-height: 200px;
+  padding: 14px;
+}
+.exam-page .form-nav {
+  margin: 10px 0 0 0;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.exam-page .form-nav .submit.btn {
+  background: #2FCA88;
+  color: #fff;
+} 
+.exam-page.Dark .form-nav .draft.btn {
+  background: #5b8520;
+}
+.exam-page .form-nav .submit.btn {
+  background: #2FCA88;
+}
+.exam-page .form-nav .draft.btn {
+  background: #77af27;
+  color: #fff;
+}
+.exam-page.Dark .form-nav .submit.btn {
+    background: #01a45f;
+}
+
+.exam-page .form-nav .btn .icon {
+  width: 24px;
+  background: #bccaa8;
+  border-radius: 100px;
+}
+.exam-page .form-nav .btn {
+  box-shadow: 0px 0px 13px -2px rgba(155, 181, 84, 0.45);
+  border-radius: 23px;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 5px;
+  font-size: 15px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+}
+.checkout-loader
+img.exam-loader {
+  width: 100px;
+}
+.exam-page .full-screen-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark transparent background for overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensures it stays on top */
+}
+
+.exam-page .full-screen-popup .popup-inner {
+  background: linear-gradient(145deg, #f0f8ff, #dbe9f1); /* Soft gradient for popup */
+  padding: 30px;
+  border-radius: 20px; /* Rounded corners for iOS-like feel */
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  animation: fadeInPopup 0.3s ease; /* Smooth fade-in animation */
+}
+
+.exam-page .full-screen-popup .popup-inner h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: #020817;
+}
+
+.exam-page .full-screen-popup .popup-inner p {
+    font-size: 15px;
+    color: #020817;
+    margin-bottom: 14px;
+}
+
+.exam-page .full-screen-popup .pop-close {
+  background: #6024c2;
+  border: none;
+  color: white;
+  font-size: 14px;  
+  margin-bottom: 20px;
+  padding: 6px 16px;
+  border-radius: 6px; /* Fully rounded button */
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(97, 36, 194, 0.31); 
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exam-page .full-screen-popup .pop-close:hover {
+  background:rgb(141, 76, 246); /* Darken on hover */
+  box-shadow: 0 6px 18px rgba(97, 36, 194, 0.31); /* Enhanced shadow on hover */
+}
+
+/* Dark Mode Styles */
+.exam-page.Dark .full-screen-popup .popup-inner {
+  background: linear-gradient(145deg, #2b2b2b, #1a1a1a); /* Dark gradient for dark mode */
+  color: #ddd; /* Light text color for dark mode */
+}
+
+.exam-page.Dark .full-screen-popup .popup-inner p {
+  color: #bbb;
+}
+
+@keyframes fadeInPopup {
+  from {
+    opacity: 0;
+    transform: scale(0.9); /* Slight scaling effect */
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.full-screen-popup .exam-head {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.col-flex.results-summary .text.rating, .col-flex.results-summary .text.feedback {
+  font-weight: 700;
+}
+.col-flex.results-summary .text {
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.5em;
+}
+.col-flex.results-summary {
+  max-height: 350px;
+  overflow: auto;
+  gap: 16px;
+}
+.col-flex.results-summary .result-card {
+  padding: 16px;
+  background: #0000002f;
+  border-radius: 16px;
+  text-align: left;
+  gap: 12px;
+}
+
+.resumeOuter .resumeTab .card {
+  padding: 20px;
+  margin-bottom: 10px;
+  font-size: 16px !important;
+}
+.resumeOuter .resumeTab .fwline {
+  width: 100%;
+  height: 1px;
+  background: #7985a4;
+  margin-bottom: 20px;
+}
+.resumeOuter.light .resumeTab .card {
+    background: #f7f7f7;
+    padding: 0;
+    box-shadow: none;
+}
+.resumeOuter.light .resumeTab .close {
+  background: #28282896;
+  color: #fff !important;
+}
+.resumeOuter.light .resumeTab h4.fs-18.border-bottom.text-black.font-w600.mb-3 {
+  color: #444444 !important;
+}
+.resumeOuter.light .resumeTab  .text {
+    font-weight: 500 !important;
+    font-size: 15px;
+    line-height: 1.5em;
+    color: #020817 !important;
+    margin: 3px 0;
+
+}
+.resumeOuter.dark .resumeTab .text span svg {
+  /* margin-right: 5px; */
+}
+.resumeOuter.light .resumeTab  .text span svg {
+  /* margin-right: 8px; */
+  width: 22px;
+}
+.resumeOuter.light .resumeTab .responseContainer {
+    color: #333;
+}
+.resumeOuter .resumeTab .close {
+  align-items: center;
+  animation: popupclose 2s ease-out 0s 1;
+  background: #fff;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  font-size: 24px;
+  color: #1d3d63 !important;
+  height: 35px;
+  justify-content: center;
+  position: absolute;
+  right: 20px;
+  rotate: 45deg;
+  top: 20px;
+  width: 35px;
+}
+.resumeOuter .resumeTab {
+  animation: popupcont 1s ease-out 0s 1;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px #7474741f;
+    font-size: 18px;
+    font-weight: 400;
+    left: 0;
+    padding: 30px;
+    position: relative;
+    top: 0;
+    transform: translate(0);
+    width: 100%;
+    max-width: 600px;
+    background: #333a54;
+    border-radius: 18px;
+}
+@keyframes popupcont {
+0% {
+  top: -100%;
+}
+100% {
+  top: 0;
+}
+}
+.interview-table .content-row {
+  position: relative;
+  transition: all 0.7ms;
+}
+.interview-table .content-row.complete.completef:hover::after {
+  content: "View Feedback";
+}
+.interview-table .content-row.complete:hover::after {
+  position: absolute;
+  content:"view details";
+  text-align: center;
+  padding: 0 2px;
+  font-size: 14px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1f8a1d;
+  border-radius: 15px;
+}
+.interview-table .content-row.incomplete:hover::after {
+  position: absolute;
+  content:"Complete Now!";
+  text-align: center;
+  padding: 4px 2px;
+  font-size: 14px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #d34747;
+  border-radius: 15px;
+}
+
+
+@media (max-width: 1180px) {
+  .interview-prep .dash-info .dash-score .t-head {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .interview-prep .dash-info .dash-score .percent-score {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+}
+.interview-prep .dash-info .dash-card {
+  padding: 16px;
+  gap: 8px;
+}
+.interview-prep .dash-info .dash-score .suggestions {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 10px;
+}
+.interview-prep .dash-info .dash-icon .dash-img {
+  width: 32px;
+  height: 32px;
+}
+.interview-prep .dash-info {
+  gap: 12px;
+  justify-content: space-between;
+}
+.interview-prep .dash-info .dash-card {
+  width: calc(25% - 10px);
+  min-width: 206px;
+}
+.interview-prep .interview-table .table-heading .head-row .icon {
+  width: 30px;
+  height: 30px;
+}
+.interview-prep .interview-table .table-heading .head-row, .interview-prep .interview-table .table-content .content-row {
+  gap: 8px;
+}
+
+.interview-prep .interview-table .table-heading .head-row .head-text, .interview-prep .interview-table .table-content .content-row .Content-text {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.interview-prep .interview-table .table-heading .head-row:nth-child(1), .interview-prep .interview-table .table-content .content-row:nth-child(1) {
+  width: 15%;
+}
+.interview-prep .interview-table .table-heading .head-row:nth-child(3), .interview-prep .interview-table .table-content .content-row:nth-child(3) {
+  width: 12%;
+}
+.interview-prep .interview-table .table-heading .head-row:nth-child(5), .interview-prep .interview-table .table-content .content-row:nth-child(5) {
+  width: 25%;
+}
+.interview-prep .interview-table .table-heading .head-row:nth-child(7), .interview-prep .interview-table .table-content .content-row:nth-child(7) {
+  width: 10%;
+}
+}
+@media (max-width: 910px) {
+  .interview-prep .dash-info {
+    gap: 16px;
+    justify-content: space-between;
+}
+.interview-prep .dash-info .dash-card {
+  width: calc(50% - 10px);
+  min-width: 206px;
+}
+.interview-prep .interview-table .table-heading, .interview-prep .interview-table .table-content {
+  padding: 6px 10px;
+}
+}
+@media (max-width: 768px) {
+  .interview-prep .dash-info .dash-card {
+    width: calc(50% - 10px);
+    min-width: 127px;
+}
+.interview-prep .dash-info .dash-score .t-head {
+  font-size: 10px;
+  line-height: 15px;
+}
+.interview-prep .dash-info .dash-score .percent-score {
+  font-size: 16px;
+  line-height: 22px;
+}
+.interview-prep .dash-info .dash-score .suggestions {
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 10px;
+}
+.interview-prep .dash-info .dash-card {
+  padding: 11px;
+  gap: 6px;
+}
+.interview-prep .interview-table .table-heading .head-row .head-text {
+  display: none;
+}
+.interview-prep.Light .interview-table .table-content .content-row button .action-text {
+  display: none;
+}
+.interview-prep.Light .interview-table .table-content .content-row button.incompleted span {
+  display: none;
+}
+.interview-prep .interview-table .table-heading .head-row .head-text, .interview-prep .interview-table .table-content .content-row .Content-text {
+  font-size: 10px;
+}
+.interview-prep .interview-table .table-heading .head-row:nth-child(9), .interview-prep .interview-table .table-content .content-row:nth-child(9) {
+  width: 10%;
+}
+.interview-prep .interview-table .table-heading .head-row:nth-child(7), .interview-prep .interview-table .table-content .content-row:nth-child(7) {
+  width: 8%;
+}
+.interview-prep .interview-table .table-heading .head-row .head-text, .interview-prep .interview-table .table-content .content-row .Content-text {
+  font-size: 9px;
+}
+.interview-prep .interview-table .create-btn {
+  padding: 7px 14px;
+}
+.interview-prep .interview-table .table-heading .head-row .icon {
+  width: 24px;
+  height: 24px;
+}
+.interview-prep.Light .interview-table .table-content .content-row button.completed {
+  color: #07CB79;
+  border: 1px solid #07CB79;
+  border-radius: 15px;
+  padding: 1px 2px;
+}
+.interview-prep .interview-table .table-heading .head-row:nth-child(7), .interview-prep .interview-table .table-content .content-row:nth-child(7) {
+  width: 6%;
+}
+.interview-prep.Light .interview-table .table-content .content-row button.incompleted {
+  padding: 1px 3px;
+}
+.interview-table .content-row.complete:hover::after {
+  font-size: 12px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  min-width: 90px;
+  z-index: 999;
+}
+  .exam-page .question-nav .next.btn , .exam-page .question-nav .prev.btn {
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .exam-page .question-nav .next.btn span, .exam-page .question-nav .prev.btn span {
+    display: none;
+
+  }
+}
+@media (max-width: 380px) {
+  .interview-prep .dash-info .dash-card {
+  width: calc(100% - 10px);
+  min-width: 150px;
+  }
+}
+
+.interview-prep .jobPagination .currentPage {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+  background: none;
+  color: #443E9A;
+}
+.interview-prep .jobPagination li:hover {
+  background: #443e9a11;
+  box-shadow: 1px 1px 20px #00000015;
+}
+.interview-prep .jobPagination li {
+  background: #fff;
+  transition: all 0.5s;
+  border-radius: 100px;
+}
+.interview-prep .jobPagination {
+  display: flex;
+  flex-direction: row;
+  transition: all 0.5s;
+  justify-content: space-between;
+  width: 20%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .resumeOuter .resumeTab {
+    width: 100%;
+  }
+}

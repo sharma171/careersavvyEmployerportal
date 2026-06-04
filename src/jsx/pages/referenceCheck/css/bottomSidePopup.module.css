@@ -1,0 +1,97 @@
+/* Fade-in animation for the popup */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.linkExpiredPopup {
+  display: flex;
+  position: fixed;
+  z-index: 99999;
+  right: 20px;
+  bottom: 20px;
+  padding: 18px 25px;
+  background: #fafafa;
+  box-shadow: 0 0 15px #59595920;
+  border-radius: 15px;
+  border-bottom: 3px solid #2563eb;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+/* Flex layout */
+.rowitems {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.Info {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+}
+
+.head {
+    font-size: 20px;
+    font-weight: 600;
+    color: #323232;
+    margin-bottom: 7px;
+}
+
+.para {
+    font-size: 13px;
+    color: rgb(98, 98, 98);
+    margin-bottom: 0;
+    line-height: 1.4em;
+}
+
+/* Button base style */
+.OkayBtn {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  background: #2563eb;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  user-select: none;
+}
+
+/* Hover effect */
+.OkayBtn:hover {
+  background-color: #1a4ebf; /* Slightly darker blue */
+  transform: scale(1.05);
+}
+
+/* Focus-visible for accessibility */
+.OkayBtn:focus-visible {
+  outline: 2px solid #fbbf24;
+  outline-offset: 3px;
+}
+
+/* Optional: Pulse animation for loading state */
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 10px 6px rgba(255, 255, 255, 0);
+  }
+}
+
+.OkayBtn.loading {
+  animation: pulse 2s infinite;
+  pointer-events: none; /* Disable clicks when loading */
+}

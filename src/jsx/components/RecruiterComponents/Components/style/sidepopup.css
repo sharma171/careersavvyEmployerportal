@@ -1,0 +1,43 @@
+.sideViewPopupOuter {
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  position: fixed;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol,
+    "Noto Color Emoji";
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  .sideView.smallView {
+    max-width: 440px;
+  }
+
+  .sideView.midView {
+    max-width: 650px;
+  }
+
+  .sideView {
+    background: #fff;
+    box-shadow: -2px 4px 20px 0 #0000002e;
+    height: 100%;
+    max-width: 900px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+  }
+  .innerElements {
+    display: flex;
+    flex-direction: column;
+    margin: 14px 24px;
+  }
+}
+body:has(.sideViewPopupOuter.popupOpen) {
+  overflow: hidden !important;
+}
+body:has(.sideViewPopupOuter) {
+  overflow: hidden !important;
+}

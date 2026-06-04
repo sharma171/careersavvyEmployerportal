@@ -1,0 +1,166 @@
+.w-oLogininterview {
+
+    /* InterviewWelcome.css */
+.interview-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 16px;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+.interview-card {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  max-width: 650px;
+  width: 100%;
+  text-align: center;
+}
+
+.icon-wrapper {
+  background-color: #e0edff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px auto;
+}
+
+.interview-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+.interview-subtitle {
+  font-size: 16px;
+  color: #4b5563;
+  margin-bottom: 16px;
+}
+
+.greeting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.user-icon {
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+.interview-desc {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.info-boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.info-box {
+  flex: 1;
+  background-color: #f0f7ff;
+  padding: 12px 14px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-icon {
+  font-size: 22px;
+  color: #3b82f6;
+}
+
+.info-label {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.info-value {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.instruction-box {
+  text-align: left;
+  background-color: #fff7e6;
+  border: 1px solid #facc15;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.instruction-title {
+  color: #b45309;
+  font-weight: 600;
+  margin-bottom: 8px;
+  .excl {
+    display: inline-flex;
+    margin-right: 10px;
+    width: 20px;
+    border-radius: 100px;
+    font-size: 12px;
+    border: 1px solid #b45309;
+    height: 20px;
+    justify-content: center;
+  }
+}
+
+.instruction-list {
+  padding-left: 20px;
+  margin: 0;
+  font-size: 14px;
+  color: #b45309;
+}
+
+.instruction-list li {
+  margin-bottom: 6px;
+  list-style: disc;
+}
+
+.highlight {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.system-check-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 12px 24px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.system-check-btn:hover {
+  background-color: #2563eb;
+}
+
+}
+@media (max-width:768px) {
+  .w-oLogininterview {
+    .info-boxes {
+      flex-direction: column;
+    }}
+}

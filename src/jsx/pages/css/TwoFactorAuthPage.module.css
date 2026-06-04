@@ -1,0 +1,220 @@
+/* TwoFactorAuthPage.module.css */
+.mainContainer {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(to bottom right, #eff6ff, #eef2ff, #f3e8ff);
+}
+
+.backgroundShapes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.shape1,
+.shape2,
+.shape3,
+.shape4 {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+.shape1 {
+  top: 5rem;
+  left: 2.5rem;
+  width: 5rem;
+  height: 5rem;
+  animation: pulse 2s infinite;
+}
+
+.shape2 {
+  top: 10rem;
+  right: 5rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(168, 85, 247, 0.15);
+  animation: bounce 3s infinite;
+}
+
+.shape3 {
+  bottom: 8rem;
+  left: 25%;
+  width: 6rem;
+  height: 6rem;
+  animation: pulse 2s infinite;
+}
+
+.shape4 {
+  bottom: 5rem;
+  right: 33%;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: rgba(59, 130, 246, 0.12);
+  animation: bounce 3s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.2;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.leftPanel {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #0d6efd, #2563eb, #7e22ce);
+  position: relative;
+}
+
+.leftOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.leftCircle1,
+.leftCircle2,
+.leftCircle3 {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.leftCircle1 {
+  top: -10rem;
+  right: -10rem;
+  width: 24rem;
+  height: 24rem;
+}
+
+.leftCircle2 {
+  bottom: -8rem;
+  left: -8rem;
+  width: 20rem;
+  height: 20rem;
+}
+
+.leftCircle3 {
+  top: 50%;
+  left: 33%;
+  width: 10rem;
+  height: 10rem;
+  animation: pulse 2s infinite;
+}
+
+.otpContainer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.otpInput {
+  cursor: text;
+}
+
+.otpGroup {
+  display: flex;
+}
+
+.otpSlot {
+  position: relative;
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid #ced4da;
+  font-size: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.otpSlot:last-child {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.activeSlot {
+  z-index: 10;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.5);
+}
+
+.caretContainer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.caret {
+  width: 1px;
+  height: 1rem;
+  background-color: #212529;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+.bg-white-10 {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-white-30 {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.bg-white-20 {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bg-light {
+  background-color: #f8f9fa;
+}
+
+.bg-purple {
+  background-color: #6f42c1;
+}
+
+.bg-info {
+  background-color: #0dcaf0 !important;
+}
+
+.bg-success {
+  background-color: #198754 !important;
+}
+
+.bg-warning {
+  background-color: #ffc107 !important;
+}
+
+.text-info {
+  color: #0dcaf0 !important;
+}
+
+.text-primary {
+  color: #0d6efd !important;
+}

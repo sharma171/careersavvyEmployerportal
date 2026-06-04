@@ -1,0 +1,60 @@
+.skeleton-loader {
+    width: 150px;
+    height: 28px;
+    background-color: #d3d3d3; /* Light gray background for skeleton */
+    border-radius: 4px;
+    animation: shimmer 1.5s infinite linear;
+    margin: 0 auto;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background: #bdbdbd1f;
+    }
+    50% {
+      background: #a0a0a077;
+    }
+    100% {
+      background: #c0c0c01b;
+    }
+  }
+  
+  /* Skeleton Loader CSS */
+    .skeleton {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    animation: pulse,shimmer  1.5s infinite ease-in-out;
+  }
+  
+  .skeleton-circle {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+  }
+  
+  .skeleton-text {
+        /* width: 80px; */
+        height: 16px;
+        border-radius: 4px;
+        margin-top: -43px;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .popup.pro-bg .pro-container.small {
+    height: 200px;
+  }
+  .pro-bg.popup .pro-container.small .upgrade-description {
+    margin-top: 23px;
+    margin-bottom: 23px;
+  }

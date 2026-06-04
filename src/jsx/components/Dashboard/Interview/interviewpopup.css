@@ -1,0 +1,31 @@
+.Interview-Chooser {
+    display: flex
+    ;
+    flex-direction: row;
+    gap: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.Interview-Chooser .manualInterview {
+    width: 100%;
+    border-radius: 35px;
+    padding: 5px 10px;
+    border: 1px solid #d3d3d3;
+    transition: all 0.4s;
+}
+.Interview-Chooser .manualInterview.active, .Interview-Chooser .manualInterview:hover {
+    background: rgb(77, 66, 171);
+    color: #fff;
+}
+.resumeOuter.light .resumeTab .feedbackbox.videoInterview .sidebar {
+    display: none;
+}
+.resumeOuter.light .resumeTab .feedbackbox.videoInterview .card {
+    background: #ffffff;
+}
+.resumeOuter.light .resumeTab .feedbackbox {
+    max-height: 70vh;
+    overflow: auto;
+    margin-bottom: 15px !important;
+}

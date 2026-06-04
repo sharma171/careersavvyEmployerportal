@@ -1,0 +1,62 @@
+.activate-container .inner {
+  padding: 10px;
+}
+.activate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .activate-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .activate-button:hover {
+    background-color: #45a049;
+  }
+  
+
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(182 182 182 / 33%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .popup-message {
+    background: white;
+    padding: 50px;
+    border-radius: 8px;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+
+  .login-btn:hover {
+    background: #45a077;
+  }
+  .login-btn {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    padding: 10px 20px;
+    background: #e6e6e6;
+  }
+  @media (max-width: 767px) {
+    .popup-message {
+      padding: 25px;
+    }}

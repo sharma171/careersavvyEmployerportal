@@ -1,0 +1,202 @@
+.ref-main-bg {
+  background: #f3f4f6;
+  min-height: 100vh;
+  padding: 32px 0;
+
+  .ref-main-wrap {
+    max-width: 100%;
+    margin: 0 auto;
+    /* background: #fff; */
+    border-radius: 13px;
+    /* box-shadow: 0 2px 18px rgba(24, 36, 74, 0.08); */
+    padding: 0px 32px 0px 32px;
+
+    .ref-section {
+      padding-bottom: 16px;
+      margin-bottom: 0;
+      padding: 1.5rem;
+      border: 1px solid hsl(214.3 31.8% 91.4%);
+      background: hsl(0 0% 100%);
+      margin-bottom: 18px;
+      border-radius: 10px;
+    }
+    .ref-section-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #020817;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+    }
+    .ref-row,
+    .ref-rating-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+    .ref-label {
+      font-weight: 600;
+      color: #23272f;
+    }
+    .ref-icon {
+      color: #3364d1;
+      margin-right: 3px;
+      vertical-align: middle;
+    }
+
+    .ref-pill-pillyes {
+      background: #d1f7e6;
+      color: #0a8a43;
+      border-radius: 7px;
+      padding: 3px 12px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      font-size: 14px;
+    }
+    .ref-pill-pillno {
+      background: #fde5e6;
+      color: #b91c1c;
+      border-radius: 7px;
+      padding: 3px 12px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .ref-rating {
+      font-size: 15px;
+      margin-left: 6px;
+      font-weight: 600;
+      color: #174082;
+    }
+
+    .ref-section-group {
+      background: #f9fafb;
+      border-radius: 11px;
+      padding: 19px 18px 9px 18px;
+      margin: 18px 0 0 0;
+    }
+
+    .ref-block {
+      margin-bottom: 26px;
+    }
+    .ref-block:last-child {
+      margin-bottom: 12px;
+    }
+    .ref-block-title {
+      color: #222f38;
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 11px;
+    }
+    .ref-block-content {
+      font-size: 15px;
+      color: #353a46;
+      font-weight: 500;
+      background: #fff;
+      border-radius: 5px;
+      padding: 12px 14px 10px 14px;
+      border: 1px solid #e7e8ec;
+      word-break: break-word;
+    }
+
+    .ref-internal-title {
+      color: #b45309;
+    }
+    .ref-internal {
+      background: #fef7e5;
+      color: #8a5506;
+      border-radius: 5px;
+      font-size: 14px;
+      padding: 12px 0 12px 12px;
+      margin-left: 3px;
+    }
+
+    .ref-actions {
+      display: flex;
+      justify-content: flex-start;
+      gap: 18px;
+      margin-top: 25px;
+      margin-bottom: 2px;
+    }
+    .ref-btn {
+      background: #f3f4f9;
+      border: 1px solid #e3e5ef;
+      color: #194550;
+      font-weight: 600;
+      border-radius: 7px;
+      display: flex;
+      gap: 6px;
+      padding: 7px 15px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.13s;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .ref-btn:hover,
+    .ref-btn:active {
+      background-color: #024ec1;
+      color: #fff;
+    }
+    .ref-btn-download {
+      background: #2563eb;
+      color: #fff;
+      border: none;
+    }
+    .ref-btn-download:hover,
+    .ref-btn-download:active {
+      background: #1947c8;
+    }
+    .ref-btn-secondary {
+      background: #fff;
+      color: #475569;
+      border: 1px solid #e3e3e9;
+      margin-left: auto;
+    }
+    .ref-btn-secondary:hover,
+    .ref-btn-secondary:active {
+      background: #f6f6f6;
+      color: #000;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .ref-main-bg {
+    & .ref-main-wrap {
+      .ref-block-content {
+        font-size: 15px;
+        color: #353a46;
+        font-weight: 500;
+        background: none;
+        border: none;
+        border-radius: 5px;
+        margin: 5px -18px;
+        padding: 1px 14px 7px 14px;
+      }
+    }
+  }
+  .ref-main-bg {
+    & .ref-main-wrap {
+      .ref-label {
+        margin-bottom: 5px;
+      }
+      .ref-row,
+      .ref-rating-row {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3px;
+        div.refMail {
+          display: flex;
+          flex-direction: row;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,654 @@
+.sideViewPopupOuter .ref-container {
+  background: #ffffff;
+  border-radius: 8px;
+  height: 100vh;
+  /* overflow: auto; */
+  display: flex;
+  scrollbar-width: none;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  flex-direction: column;
+}
+
+.sideViewPopupOuter .ref-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 24px 10px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  align-items: center;
+}
+
+.sideViewPopupOuter .sideViewTop.noBorder {
+  border: none;
+}
+.sideViewPopupOuter .sideViewTop {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.sideViewPopupOuter .scheduleformContainer {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  overflow: auto;
+  margin-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.sideViewPopupOuter .scheduleformContainer .existingInterview {
+  background: #f7fafc;
+  padding: 1rem;
+  color: #020817;
+  margin-bottom: 1.5rem;
+  display: flex;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  flex-direction: row;
+  gap: 0.85rem;
+}
+.sideViewPopupOuter .scheduleformContainer .existingInterview .icon {
+  width: 16px;
+  height: 16px;
+}
+.sideViewPopupOuter .scheduleformContainer .existingInterview .icon svg {
+  width: 16px;
+  height: 16px;
+  margin-top: -7px;
+}
+.sideViewPopupOuter .scheduleformContainer .existingInterview .info {
+  display: flex;
+  flex-direction: column;
+}
+.sideViewPopupOuter .scheduleformContainer .existingInterview .info .head {
+  color: #030816;
+  font-size: 14px;
+  line-height: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+.sideViewPopupOuter .scheduleformContainer .existingInterview .info .text {
+  font-size: 14px;
+  margin-top: 0.25rem;
+  color: #030816;
+  font-weight: 400;
+}
+.sideViewPopupOuter .scheduleformContainer .existingInterview .info .borderText {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  color: #000015;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  border: 1px solid #e2e8f0;
+  margin-top: 0.5em;
+  margin-right: auto;
+  border-radius: 9999px;
+}
+
+.sideViewPopupOuter .scheduleformContainer .containerform {
+  font-size: 15px;
+  color: #111;
+  padding: 0;
+  line-height: 1.7;
+}
+.sideViewPopupOuter .scheduleformContainer .section {
+  margin-bottom: 24px;
+}
+.sideViewPopupOuter .scheduleformContainer .label {
+  font-weight: 600;
+  display: block;
+  padding-left: 0;
+  margin-bottom: 0.77rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: left;
+  font-weight: 500;
+  color: rgb(55 65 81);
+  .asterisk {
+    color: red;
+  }
+}
+.sideViewPopupOuter .scheduleformContainer .option-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.sideViewPopupOuter .scheduleformContainer .radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 400;
+  position: relative;
+}
+.sideViewPopupOuter .scheduleformContainer .radio-label input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 2px solid #2463eb;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 6px;
+  display: inline-block;
+  height: 16px;
+  outline: none;
+  position: relative;
+  width: 16px;
+}
+.sideViewPopupOuter .scheduleformContainer .radio-label input[type="radio"]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #2463eb;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.15s ease-in-out;
+}
+.sideViewPopupOuter .scheduleformContainer .radio-label input[type="radio"]:checked::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+.sideViewPopupOuter .scheduleformContainer .radio-text {
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+.sideViewPopupOuter .scheduleformContainer .textarea.description {
+  min-height: 120px;
+  margin-bottom: 13px;
+}
+.sideViewPopupOuter .scheduleformContainer .textarea.focus {
+  min-height: 80px;
+}
+.sideViewPopupOuter .scheduleformContainer .textarea {
+  width: 100%;
+  padding: 5px 12px;
+  border-radius: 8px;
+  border: 1px solid #d3d3d3;
+  background: #ffffff;
+  color: #020817;
+  display: flex;
+  font-size: 14px;
+  resize: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+.sideViewPopupOuter .scheduleformContainer textarea {
+  width: 100%;
+  padding: 5px 12px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  background: #f8fafc;
+  display: flex;
+  font-size: 14px;
+  resize: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+.sideViewPopupOuter .scheduleformContainer .textarea:focus {
+  border: 1px solid #2463eb;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
+  outline: none;
+}
+.sideViewPopupOuter .scheduleformContainer .guidelines {
+  color: #64748b;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+
+.sideViewPopupOuter .interviewSubmit {
+  padding: 1.5rem;
+  background: #fff;
+  border-top: 1px solid #e2e8f0;
+}
+.sideViewPopupOuter .interviewSubmit .submitBtn {
+  background-color: rgb(147 51 234);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: 100%;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  transition: all 0.3s;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  border: none;
+  gap: 0.7rem;
+  border-radius: 6px;
+  color: #f8fafc;
+}
+.sideViewPopupOuter .interviewSubmit .submitBtn .icon {
+  width: 16px;
+  height: 16px;
+}
+.sideViewPopupOuter .interviewSubmit .submitBtn .icon .custom-spinner {
+  border-top: 1px solid #ffffff; /* Purple spinning segment */
+  border-left: 1px solid #ffffff; /* Purple spinning segment */
+  border-right: 1px solid #ffffff;
+}
+.sideViewPopupOuter .interviewSubmit .submitBtn:hover {
+  background-color: rgb(126 34 206);
+}
+.sideViewPopupOuter .interviewSubmit .submitBtn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.sideViewPopupOuter .ref-title {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: #020817;
+  margin: 0;
+}
+.sideViewPopupOuter .ref-close-icon {
+  position: fixed;
+  cursor: pointer;
+  top: 14px;
+  right: 20px;
+  transform: rotate(45deg);
+  color: #020817;
+  rotate: 45deg;
+  font-size: 22px;
+  box-shadow: 0 0 8px rgb(218 218 218 / 50%);
+  width: 27px;
+  padding: 4px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+  user-select: none;
+  }
+
+  .ref-close-icon:hover {
+    background-color: #00264ef3;
+    color: rgb(255 255 255 / 77%);
+    transform: rotate(45deg) scale(1.15);
+  }
+.sideViewPopupOuter .ref-details {
+  padding: 0 24px 16px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.sideViewPopupOuter .ref-name {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+  color: #020817;
+}
+.sideViewPopupOuter .ref-role {
+  margin: 0 0;
+  color: #64748b;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+.sideViewPopupOuter .ref-completed {
+  display: flex;
+  align-items: center;
+  color: #6b7280;
+  font-size: 0.75rem;
+  gap: 0.5rem;
+  line-height: 1rem;
+  margin-top: 12px;
+}
+.sideViewPopupOuter .ref-completed svg {
+  margin-right: 0;
+  font-size: 14px;
+  width: 14px;
+  color: #6b7280;
+}
+.sideViewPopupOuter .ref-tabs {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8fafc;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+.sideViewPopupOuter .ref-tabs .navBar {
+  display: flex;
+  padding: 0.31rem 0.25rem !important;
+  background: #f2f5f9 !important;
+}
+.sideViewPopupOuter .ref-tabs .navBar .tabButton {
+  border: none;
+  background: transparent;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.sideViewPopupOuter .ref-tabs .navBar .tabButton:hover,
+.sideViewPopupOuter .ref-tabs .navBar .tabButton.active {
+  background: #f7fafc;
+}
+
+.sideViewPopupOuter .ref-tab-btn {
+  padding: 8px 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  border-radius: 8px;
+  color: #374151;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.sideViewPopupOuter .ref-tab-btn:hover {
+  background-color: #e5eaf3;
+}
+.sideViewPopupOuter .ref-active {
+  background-color: white;
+  box-shadow: 0 0 0 1px #e5e7eb;
+  font-weight: 500;
+}
+
+.sideViewPopupOuter .referee-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin: 0;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+}
+.sideViewPopupOuter .referee-heading {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #020817;
+  margin-bottom: 10px;
+}
+.sideViewPopupOuter .referee-heading h4 {
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.sideViewPopupOuter .referee-heading .icon {
+  margin-right: 8px;
+  font-size: 14px;
+  color: #020817;
+  width: 16px;
+  height: 24px;
+}
+.sideViewPopupOuter .referee-info {
+  padding-left: 2px;
+}
+.sideViewPopupOuter .referee-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #020817;
+}
+.sideViewPopupOuter .referee-title {
+  margin: 2px 0 14px;
+  font-size: 14px;
+  color: #64748b;
+}
+.sideViewPopupOuter .referee-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 6px;
+}
+.sideViewPopupOuter .referee-item .icon {
+  margin-right: 8px;
+  color: #64748b;
+  font-size: 14px;
+  width: 14px;
+}
+.sideViewPopupOuter .recommendation-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin: 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+.sideViewPopupOuter .recommendation-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 16px;
+}
+.sideViewPopupOuter .recommendation-badge {
+  display: inline-flex;
+  align-items: center;
+  background-color: rgb(34 197 94);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 2px 12px;
+  border-radius: 999px;
+}
+.sideViewPopupOuter .check-icon {
+  margin-right: 8px;
+  font-size: 14px;
+  width: 16px;
+}
+.sideViewPopupOuter .feedback-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 24px;
+  max-width: 1000px;
+  margin: 0px auto;
+}
+.sideViewPopupOuter .feedback-header {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 20px;
+}
+.sideViewPopupOuter .feedback-question-block {
+  margin-bottom: 28px;
+}
+.sideViewPopupOuter .feedback-question {
+  font-weight: 600;
+  font-size: 15px;
+  color: #111827;
+  margin-bottom: 12px;
+}
+.sideViewPopupOuter .feedback-answer {
+  background-color: #f9fafb;
+  border-radius: 6px;
+  padding: 16px;
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.6;
+}
+.sideViewPopupOuter .secuirityalert {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  background-color: rgb(239 246 255);
+  color: rgb(30 64 175);
+  padding: 0.75rem 0.85rem;
+  border-radius: 8px;
+}
+
+.sideViewPopupOuter .importCandidateForm {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+}
+.sideViewPopupOuter .importCandidateForm .candidate-form {
+  margin: 0;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+}
+.sideViewPopupOuter .importCandidateForm .form-row {
+  display: flex;
+  gap: 12px;
+  width: auto;
+}
+.sideViewPopupOuter .importCandidateForm .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  flex: 1;
+}
+.sideViewPopupOuter .importCandidateForm .full-width {
+  width: 100%;
+}
+.sideViewPopupOuter .importCandidateForm label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #020817;
+  .asterisk {
+    color: red;
+  }
+}
+.sideViewPopupOuter .importCandidateForm input[type="text"], 
+.sideViewPopupOuter .importCandidateForm input[type="email"], 
+.sideViewPopupOuter .importCandidateForm input[type="tel"] {
+  padding: 10px 12px;
+  border: 1px solid #e3e8ef;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+.sideViewPopupOuter .importCandidateForm .textarea {
+  width: 100%;
+  padding: 5px 12px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  background: #ffffff;
+  display: flex;
+  min-height: 110px;
+  font-size: 14px;
+  resize: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+.sideViewPopupOuter .importCandidateForm .textarea:focus {
+  border: 1px solid #2463eb;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  outline: none;
+}
+.sideViewPopupOuter .importCandidateForm input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 1px #3b82f6;
+}
+.sideViewPopupOuter .importCandidateForm .upload-box {
+  position: relative;
+  border: 2px dashed #d1d5db;
+  padding: 24px;
+  border-radius: 6px;
+  text-align: center;
+  color: #4b5563;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+.sideViewPopupOuter .importCandidateForm .upload-box:hover {
+  background-color: #f3f4f6;
+}
+.sideViewPopupOuter .importCandidateForm .upload-box p {
+  margin: 8px 0 2px;
+}
+.sideViewPopupOuter .importCandidateForm .upload-box span {
+  font-size: 12px;
+  color: #6b7280;
+}
+.sideViewPopupOuter .importCandidateForm .file-input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.sideViewPopupOuter .importCandidateForm .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+.sideViewPopupOuter .importCandidateForm .btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+.sideViewPopupOuter .importCandidateForm .cancel-btn {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  color: #374151;
+}
+.sideViewPopupOuter .importCandidateForm .primary-btn {
+  color: white;
+  background: #3661e2;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.sideViewPopupOuter .importCandidateForm .primary-btn .icon .custom-spinner {
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 0px solid transparent;
+}
+.sideViewPopupOuter .importCandidateForm .file-preview-box {
+  border: 2px dashed #d1d5db;
+  border-radius: 6px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9fafb;
+  font-size: 14px;
+  color: #111827;
+}
+.sideViewPopupOuter .importCandidateForm .file-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.sideViewPopupOuter .importCandidateForm .file-name {
+  font-weight: 500;
+  color: #2563eb;
+  word-break: break-all;
+}
+.sideViewPopupOuter .importCandidateForm .file-size {
+  font-size: 12px;
+  color: #6b7280;
+}
+.sideViewPopupOuter .importCandidateForm .remove-file-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #6b7280;
+  transition: color 0.2s;
+}
+.sideViewPopupOuter .importCandidateForm .remove-file-btn:hover {
+  color: #ef4444;
+}

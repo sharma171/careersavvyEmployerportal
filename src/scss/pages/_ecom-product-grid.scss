@@ -1,0 +1,17 @@
+.new-arrival-product{
+	.new-arrivals-img-contnent{
+		overflow:hidden;
+		
+		img{
+			width:100%;
+			@include transitionMedium;
+		}
+	}
+	&:hover .new-arrivals-img-contnent img{
+		transform: scale(1.5) translateY(12%) rotate(-7deg);
+		-moz-transform: scale(1.5) translateY(12%) rotate(-7deg);
+		-webkit-transform: scale(1.5) translateY(12%) rotate(-7deg);
+		-ms-transform: scale(1.5) translateY(12%) rotate(-7deg);
+		-o-transform: scale(1.5) translateY(12%) rotate(-7deg);
+	}
+}

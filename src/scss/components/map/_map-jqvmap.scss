@@ -1,0 +1,22 @@
+.jqvmap-zoomin,
+.jqvmap-zoomout {
+    height: 20px;
+    width: 20px;
+    line-height: 14px;
+    background-color: var(--primary);
+    color: $white;
+}
+
+.jqvmap-zoomout {
+    top: 35px;
+}
+
+#world-map {
+    height: 400px;
+    svg{
+        path {
+            fill: #eff2f4;
+            stroke: #fff;
+        }
+    } 
+}
